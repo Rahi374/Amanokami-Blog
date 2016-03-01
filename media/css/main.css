@@ -185,13 +185,14 @@ table th.right, table td.right {
     color: #888;
 }
 .masthead:after {
-    display: block;
-    /* content: '----------------------------------------------------------------'; */
-    content: " ";
-    margin: 10px 0;
-    color: #ccc;
-    background: #333 -moz-linear-gradient(left center , #CCC, #333, #CCC) repeat scroll 0% 0%;
-    height: 1px;
+  display: block;
+  /* content: '----------------------------------------------------------------'; */
+  content: " ";
+  margin: 10px 0;
+  color: #ccc;
+  /*   background: #333 -moz-linear-gradient(left center , #CCC, #333, #CCC) repeat scroll 0% 0%; */
+  background: #333 none repeat scroll 0% 0%;
+  height: 1px;
 }
 .masthead a {
     color: #333;
@@ -256,7 +257,8 @@ table th.right, table td.right {
   /* content: "----------------------------------------------------------------"; */
   content: " ";
   color: #ccc;
-  background: #333 -moz-linear-gradient(left center , #CCC, #333, #CCC) repeat scroll 0% 0%;
+  /* background: #333 -moz-linear-gradient(left center , #CCC, #333, #CCC) repeat scroll 0% 0%; */
+  background: #333 none repeat scroll 0% 0%;
   height: 1px;
 }
 .post img {
@@ -304,7 +306,8 @@ table th.right, table td.right {
   display: block;
   margin-top: -1px;
   color: #ccc;
-  background: #333 -moz-linear-gradient(left center , #CCC, #333, #CCC) repeat scroll 0% 0%;
+  /* background: #333 -moz-linear-gradient(left center , #CCC, #333, #CCC) repeat scroll 0% 0%; */
+  background: #333 none repeat scroll 0% 0%;
   height: 1px;
 }
 
