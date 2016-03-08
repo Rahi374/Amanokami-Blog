@@ -1,4 +1,4 @@
-#+TITLE:       Flexbox Defense and Flexbox Froggy - Learning Flexbox
+#+TITLE:       Learning Flexbox with games
 #+AUTHOR:      Paul Elder
 #+EMAIL:       paul.elder@amanokami.net
 #+DATE:        2016-03-08 Tue
