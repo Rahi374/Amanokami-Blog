@@ -4,8 +4,8 @@
     <title>Amanokami Blog</title>
     <link>http://amanokami.net/</link>
     <description>Emacs of an IB Student</description>
-    <pubDate>Wed, 09 Mar 2016 00:39:59 JST</pubDate>
-    <lastBuildDate>Wed, 09 Mar 2016 00:39:59 JST</lastBuildDate>
+    <pubDate>Wed, 09 Mar 2016 00:42:13 JST</pubDate>
+    <lastBuildDate>Wed, 09 Mar 2016 00:42:13 JST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
@@ -17,10 +17,10 @@
     </item>
     <item>
       <title>Home directory organization</title>
-      <link>http://amanokami.net/blog/2016/03/08/home-directory-organization</link>
+      <link>http://amanokami.net/blog/2016/03/09/home-directory-organization</link>
       <description><![CDATA[My way of organizing my home directory.]]></description>
       <pubDate>2016-03-09</pubDate>
-      <guid>http://amanokami.net/blog/2016/03/08/home-directory-organization</guid>
+      <guid>http://amanokami.net/blog/2016/03/09/home-directory-organization</guid>
     </item>
     <item>
       <title>Introduction - Emacs of an IB Student</title>
