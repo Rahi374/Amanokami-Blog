@@ -4,16 +4,23 @@
     <title>Amanokami Blog</title>
     <link>http://amanokami.net/</link>
     <description>Emacs of an IB Student</description>
-    <pubDate>Wed, 09 Mar 2016 00:35:33 JST</pubDate>
-    <lastBuildDate>Wed, 09 Mar 2016 00:35:33 JST</lastBuildDate>
+    <pubDate>Wed, 09 Mar 2016 00:39:59 JST</pubDate>
+    <lastBuildDate>Wed, 09 Mar 2016 00:39:59 JST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
-      <title>Flexbox Defense and Flexbox Froggy - Learning Flexbox</title>
+      <title>Learning Flexbox with games</title>
       <link>http://amanokami.net/blog/2016/03/08/flexbox-defense</link>
       <description><![CDATA[Flexbox defense and Flexbox Froggy are pretty cool games for learning flexbox]]></description>
-      <pubDate>2016-03-08</pubDate>
+      <pubDate>2016-03-09</pubDate>
       <guid>http://amanokami.net/blog/2016/03/08/flexbox-defense</guid>
+    </item>
+    <item>
+      <title>Home directory organization</title>
+      <link>http://amanokami.net/blog/2016/03/08/home-directory-organization</link>
+      <description><![CDATA[My way of organizing my home directory.]]></description>
+      <pubDate>2016-03-09</pubDate>
+      <guid>http://amanokami.net/blog/2016/03/08/home-directory-organization</guid>
     </item>
     <item>
       <title>Introduction - Emacs of an IB Student</title>
