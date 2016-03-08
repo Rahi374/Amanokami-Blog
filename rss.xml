@@ -4,12 +4,12 @@
     <title>Amanokami Blog</title>
     <link>http://amanokami.net/</link>
     <description>Emacs of an IB Student</description>
-    <pubDate>Tue, 08 Mar 2016 21:35:43 JST</pubDate>
-    <lastBuildDate>Tue, 08 Mar 2016 21:35:43 JST</lastBuildDate>
+    <pubDate>Wed, 09 Mar 2016 00:34:19 JST</pubDate>
+    <lastBuildDate>Wed, 09 Mar 2016 00:34:19 JST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
-      <title>Learning Flexbox with games</title>
+      <title>Flexbox Defense and Flexbox Froggy - Learning Flexbox</title>
       <link>http://amanokami.net/blog/2016/03/08/flexbox-defense</link>
       <description><![CDATA[Flexbox defense and Flexbox Froggy are pretty cool games for learning flexbox]]></description>
       <pubDate>2016-03-08</pubDate>
