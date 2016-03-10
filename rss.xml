@@ -4,16 +4,16 @@
     <title>Amanokami Blog</title>
     <link>http://amanokami.net/</link>
     <description>Emacs of an IB Student</description>
-    <pubDate>Thu, 10 Mar 2016 22:33:39 JST</pubDate>
-    <lastBuildDate>Thu, 10 Mar 2016 22:33:39 JST</lastBuildDate>
+    <pubDate>Thu, 10 Mar 2016 22:41:38 JST</pubDate>
+    <lastBuildDate>Thu, 10 Mar 2016 22:41:38 JST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
       <title>Tutorial: Setting up OpenVPN</title>
-      <link>http://amanokami.net/blog/2016/03/14/tutorial-setting-up-openvpn</link>
+      <link>http://amanokami.net/blog/2016/03/10/tutorial-setting-up-openvpn</link>
       <description><![CDATA[Tutorial for setting up OpenVPN]]></description>
       <pubDate>2016-03-10</pubDate>
-      <guid>http://amanokami.net/blog/2016/03/14/tutorial-setting-up-openvpn</guid>
+      <guid>http://amanokami.net/blog/2016/03/10/tutorial-setting-up-openvpn</guid>
     </item>
     <item>
       <title>Web: Learning Flexbox with games</title>
