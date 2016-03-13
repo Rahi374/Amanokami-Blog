@@ -4,15 +4,15 @@
     <title>Amanokami Blog</title>
     <link>http://amanokami.net/</link>
     <description>Emacs of an IB Student</description>
-    <pubDate>Sun, 13 Mar 2016 23:59:37 JST</pubDate>
-    <lastBuildDate>Sun, 13 Mar 2016 23:59:37 JST</lastBuildDate>
+    <pubDate>Mon, 14 Mar 2016 00:03:43 JST</pubDate>
+    <lastBuildDate>Mon, 14 Mar 2016 00:03:43 JST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
       <title>IBEmacs: Scheduling</title>
       <link>http://amanokami.net/blog/2016/03/13/ibemacs-scheduling</link>
       <description><![CDATA[How to do scheduling in Emacs]]></description>
-      <pubDate>2016-03-13</pubDate>
+      <pubDate>2016-03-14</pubDate>
       <guid>http://amanokami.net/blog/2016/03/13/ibemacs-scheduling</guid>
     </item>
     <item>
