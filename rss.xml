@@ -4,10 +4,17 @@
     <title>Amanokami Blog</title>
     <link>http://amanokami.net/</link>
     <description>Emacs of an IB Student</description>
-    <pubDate>Thu, 10 Mar 2016 22:45:51 JST</pubDate>
-    <lastBuildDate>Thu, 10 Mar 2016 22:45:51 JST</lastBuildDate>
+    <pubDate>Sun, 13 Mar 2016 23:59:37 JST</pubDate>
+    <lastBuildDate>Sun, 13 Mar 2016 23:59:37 JST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>IBEmacs: Scheduling</title>
+      <link>http://amanokami.net/blog/2016/03/13/ibemacs-scheduling</link>
+      <description><![CDATA[How to do scheduling in Emacs]]></description>
+      <pubDate>2016-03-13</pubDate>
+      <guid>http://amanokami.net/blog/2016/03/13/ibemacs-scheduling</guid>
+    </item>
     <item>
       <title>Tutorial: Setting up OpenVPN</title>
       <link>http://amanokami.net/blog/2016/03/10/tutorial-setting-up-openvpn</link>
