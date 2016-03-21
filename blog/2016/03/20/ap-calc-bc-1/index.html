@@ -180,7 +180,7 @@ This is some pretty cool magic. When you find \(f^{-1}(x)\) of \(f(x)\), you are
 </p>
 
 <p>
-So for instance, if you had an equation $$f(x) = x^2 + x + 1$$, remember that \(x=t\) is the independent variable and \(f(x)=y\), and you can let $$x=t, y=t^2+t+1$$. Now, just switch \(x\) and $y$!
+So for instance, if you had an equation $$f(x) = x^2 + x + 1$$, remember that \(x=t\) is the independent variable and \(f(x)=y\), and you can let $$x=t, y=t^2+t+1$$. Now, just switch \(x\) and \(y\) !
 $$x=t^2+t+1, y=t$$
 And you've got your inverse function! Which you could convert back to a Cartesian equation by just plugging in \(y\) for \(t\).
 </p>
@@ -227,7 +227,7 @@ Woah. Coordinates are \((r,\theta)\), where \(r\) is the distance from the origi
 </p>
 
 <p>
-Oh hey this sections looks short.
+Oh hey this section looks short.
 </p>
 </div>
 
@@ -274,11 +274,11 @@ That was easy. I'm guessing we won't have to worry about intersecting with other
 <p>
 This isn't that hard either. Just remember:
 $$x=r\cos\theta, y=r\sin\theta$$.
-This means that if you need to convert a polar equation to parametric, just plug in the whole polar function in \(r\) and then multiply it by \(\cos\theta\) or $sin&theta;$!
+This means that if you need to convert a polar equation to parametric, just plug in the whole polar function in \(r\) and then multiply it by \(\cos\theta\) or \(\sin\theta\) !
 </p>
 
 <p>
-That also makes finding \((x,y)\) coordinates a lot easier. Just convert to parametric and vòila, you've already got your $(x,y)$!
+That also makes finding \((x,y)\) coordinates a lot easier. Just convert to parametric and vòila, you've already got your \((x,y)\) !
 </p>
 </div>
 </div>
@@ -309,13 +309,13 @@ Casio's got a mode for this too. Graph -&gt; Type -&gt; r=
 <h2 id="sec-5">3F Derivatives of Parametrically Defined Functions</h2>
 <div class="outline-text-2" id="text-5">
 <p>
-This looks pretty simple as well. \(\frac{dy}{dx}=\frac{y'}{x'}\), or more formally:
+This looks pretty simple as well. $$\frac{dy}{dx}=\frac{y'}{x'}$$, or more formally:
 $$\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$$.
 </p>
 
 <p>
 Also, $$\frac{d^2y}{dx^2} = \frac{d}{dx}(\frac{dy}{dx}) = \frac{\frac{d}{dt}\frac{dy}{dx}}{\frac{dx}{dt}}$$
-I supposed informally that would be $$\frac{d^2y}{dx^2} = \frac{\frac{dy}{dx}'}{x'}$$
+I suppose informally that would be $$\frac{d^2y}{dx^2} = \frac{\frac{dy}{dx}'}{x'}$$
 </p>
 
 <p>
@@ -364,7 +364,7 @@ Easy peasy.
 <h3 id="sec-5-3">Collision with Parametric equations</h3>
 <div class="outline-text-3" id="text-5-3">
 <p>
-Equate \(x_1\) and \(x_2\) and get the resulting \(t\). Then test that \(t\) while equating \(y_1\) and \(y_2\), and the the $y$s are equal, you got a true collision point!
+Equate \(x_1\) and \(x_2\) and get the resulting \(t\). Then test that \(t\) while equating \(y_1\) and \(y_2\), and the the \(y\) s are equal, you got a true collision point!
 </p>
 </div>
 </div>
@@ -379,7 +379,7 @@ Equate \(x_1\) and \(x_2\) and get the resulting \(t\). Then test that \(t\) whi
 </li>
 <li>Plug in parameters for tangent lines (easy algebra)
 </li>
-<li>Test equality of $x$s and $y$s for a given \(t\) resulting from the equivalence of \(t\) from the $x$s.
+<li>Test equality of \(x\) s and \(y\) s for a given \(t\) resulting from the equivalence of \(t\) from the \(x\) s.
 </li>
 </ul>
 </div>
@@ -402,7 +402,7 @@ Uhh, $$\frac{0}{0}, \frac{\infty}{\infty}, 0 \times \infty, \infty-\infty, 0^0, 
 <h3 id="sec-6-2">L'Hôpital's Rule</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
-This rule is used to find limits of indeterminates of the form \frac{0}{0} and \frac{\infty}{\infty}. It won't work if the limits are not indeterminates of these two forms.
+This rule is used to find limits of indeterminates of the form \(\frac{0}{0}\) and \(\frac{\infty}{\infty}\). It won't work if the limits are not indeterminates of these two forms.
 </p>
 
 <p>
@@ -442,9 +442,9 @@ For the indeterminates that are exponents, like \(1^\infty\) and \(\infty^0\), w
 Example with \(1^\infty\) (from the book):
 </p>
 \begin{equation}
-\lim_{x\to 0} (1+x)^\frac{1}{x}
-\text{let} y = (1+x)^\frac{1}{x}
-\ln y = \frac{1}{x}\ln (1+x)
+\lim_{x\to 0} (1+x)^\frac{1}{x} \\
+\text{let} y = (1+x)^\frac{1}{x} \\
+\ln y = \frac{1}{x}\ln (1+x) \\
 \lim_{x\to 0} \ln y = \lim_{x\to 0}\frac{1}{x}\ln (1+x)
 \end{equation}
 <p>
@@ -455,9 +455,9 @@ And now it's \(0\times\infty\), so we can just do what we did earlier. Don't for
 Example with \(\infty^0\) (also from the book):
 </p>
 \begin{equation}
-\lim_{x\to\infty} x^\frac{1}{x}
-\text{let} y = x^\frac{1}{x}
-\ln y = \frac{1}{x}\ln x = \frac{ln x}{x}
+\lim_{x\to\infty} x^\frac{1}{x} \\
+\text{let} y = x^\frac{1}{x} \\
+\ln y = \frac{1}{x}\ln x = \frac{ln x}{x} \\
 \end{equation}
 <p>
 Basically it's the same as the previous example.
