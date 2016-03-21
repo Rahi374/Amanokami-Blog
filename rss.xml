@@ -4,10 +4,17 @@
     <title>Amanokami Blog</title>
     <link>http://amanokami.net/</link>
     <description>Emacs of an IB Student</description>
-    <pubDate>Mon, 21 Mar 2016 14:15:27 JST</pubDate>
-    <lastBuildDate>Mon, 21 Mar 2016 14:15:27 JST</lastBuildDate>
+    <pubDate>Mon, 21 Mar 2016 14:17:05 JST</pubDate>
+    <lastBuildDate>Mon, 21 Mar 2016 14:17:05 JST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>AP Calc BC in a week - Part 1</title>
+      <link>http://amanokami.net/blog/2016/03/20/ap-calc-bc-1</link>
+      <description><![CDATA[Learning AP Calculus BC in a week - Part 1]]></description>
+      <pubDate>2016-03-21</pubDate>
+      <guid>http://amanokami.net/blog/2016/03/20/ap-calc-bc-1</guid>
+    </item>
     <item>
       <title>IBEmacs: Scheduling</title>
       <link>http://amanokami.net/blog/2016/03/13/ibemacs-scheduling</link>
