@@ -1,0 +1,235 @@
+#+TITLE:       AP Calc BC in a week - Part 1
+#+AUTHOR:      Paul Elder
+#+EMAIL:       paul.elder@amanokami.net
+#+DATE:        2016-03-20 Sun
+#+URI:         /blog/%y/%m/%d/ap-calc-bc-1
+#+KEYWORDS:    ap
+#+TAGS:        ap
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Learning AP Calculus BC in a week - Part 1
+
+* Introduction
+
+  So at school I take AP Calculus AB (since I already finished IB Math SL last year), but I'm taking the BC exam so I have to cover the BC material on my own, and it's spring break now so perfect studying time. I thought it would be cool to document my progress. Or at least my notes. Not too sure if that's a good idea or not, but ah well.
+
+  Also, I'm using Barron's book (AP Calculus), 13th edition, and I'm only going to do the BC sections. In 4 or 5 days!
+
+  Basically it'll be reading and then note-taking. Also I have a Casio fx-CG 20 calculator, so I get a bunch of easy features that the TI-84 doesn't get, so if I introduce some function and you don't have it on your TI, too bad!
+
+* Plan
+  
+  1. Day 1
+     - 1F Parametrically Defined Functions
+     - 1G Polar Functions
+     - 3F Derivatives of Parametrically Defined Funcitons
+     - 3J Indeterminate Forms and L'Hopital's Rule
+  2. Day 2
+     - 4K Motion along a curve: Velocity and Acceleration Vectors
+     - 4N Slope of a Polar Curve
+     - 5C Integration by Partial Fractions
+     - 5D Integration by Parts
+  3. Day 3
+     - 6C Integrals involving Parametrically Defined Functions
+     - 7C Arc Length
+     - 7D Improper Integrals
+     - 8B Motion alon a Plane Curve
+  4. Day 4
+     - 9C Euler's Method
+     - 9E3 Logistic Growth
+  5. Day 5
+     - 10 Sequences and Series
+
+       I'll shorten it to 4 days if I can, otherwise hopefully I can stick to this plan.
+
+       And I guess today I'm going to be doing
+     - 1F Parametrically Defined Functions
+     - 1G Polar Functions
+     - 3F Derivatives of Parametrically Defined Funcitons
+     - 3J Indeterminate Forms and L'Hopital's Rule
+
+       Let's start!
+
+* 1F Parametrically Defined Functions
+
+  So these are basically *pairs* of functions with $$x=f(t), y=f(t)$$. $t$ is the parameter.
+
+** Parametric to Cartesian
+
+  To turn a pair of parametric equations into a Cartesian equation, make $t$ the subject of the $y$ parametric equation, ie $$t=f(y)$$, then you can substitute $f(y)$ in for $t$ in $x$'s parametric equation: $$x=f(t)=f(f(y))$$.
+
+  For example:
+  \begin{equation}
+  x = 2t + 1, y = t^2 \\
+  x = 2t + 1, t = \sqrt{y} \\
+  x = 2(\sqrt{y}) + 1
+  \end{equation}
+
+** Parametric to Cartesian (relation)
+
+   A modified example from the book, which follows basically the same method as above, but $t$ is made the subjects of both equations along with a trig function. Then a trig identity can be used to form a relation.
+
+   For example:
+   \begin{equation}
+   x = 6\sin t, y = 7\cos t \\
+   \sin t = \frac{x}{6}, \cos t = \frac{y}{7} \\
+   \sin^2 t + \cos^2 t = 1 \\
+   \frac{x^2}{36} + \frac{y^2}{49} = 1
+   \end{equation}
+
+** Inverse Functions
+
+   This is some pretty cool magic. When you find $f^{-1}(x)$ of $f(x)$, you are simply switching $x$ and $y$ in the equation.
+
+   So for instance, if you had an equation $$f(x) = x^2 + x + 1$$, remember that $x=t$ is the independent variable and $f(x)=y$, and you can let $$x=t, y=t^2+t+1$$. Now, just switch $x$ and $y$!
+$$x=t^2+t+1, y=t$$
+And you've got your inverse function! Which you could convert back to a Cartesian equation by just plugging in $y$ for $t$.
+
+** Calculator Magic
+
+   On Casio we got Graph (5) -> Type (F3) -> Param (F3, on an empty equation entry) and then we can easily input a parametric equation.
+
+   The book also suggests graphing relations with the subject $x$ equal to polynomials of $y$ with parametric equations, but us Casio people can disregard that.
+
+** Take-home message
+
+   - Get one of the parametric equations to be equal to $t$, then plug into the other (Parametric to Cartesian)
+   - Get both equal to $t$ something, and equate to each other or use a trig identity (Parametric to Cartesian trig)
+     - $x=t$, $y=f(x)$, swap $x$ and $y$ so that $x=f(x)$ and $y=t$, and easy inversions!
+   - Easy to graph.
+
+* 1G Polar Functions
+
+  Woah. Coordinates are $(r,\theta)$, where $r$ is the distance from the origin and $\theta$ is the angle of rotation. Polar functions are $$r=f(\theta)$$, so I guess that means that the distance depends on the angle.
+
+  Oh hey this sections looks short.
+
+** Calm down, it's just an equation
+
+   No really it is.
+
+   Consider a polar function $r=5+6\sin\theta$.
+
+   The book only gives this (modified) example, so I'm guessing that's all we have to worry about.
+
+   1. For what values of $r$ does the curve pass through the origin?
+
+      Remember that it's just an equation. At the origin, the distance from the origin is 0, so $r=0$, and that means $$0=5+6\sin\theta$$. Now it's just simple algebra magic to find $\theta$.
+
+   2. For what values of $r$ does the curve pass through the circle $r=2$?
+
+      Still just an equation. $$r=2=5+6\sin\theta$$, and then the usual.
+
+      That was easy. I'm guessing we won't have to worry about intersecting with other functions, so that's convenient.
+
+** Polar to Parametric
+
+   This isn't that hard either. Just remember:
+   $$x=r\cos\theta, y=r\sin\theta$$.
+   This means that if you need to convert a polar equation to parametric, just plug in the whole polar function in $r$ and then multiply it by $\cos\theta$ or $\sin\theta$!
+
+   That also makes finding $(x,y)$ coordinates a lot easier. Just convert to parametric and vòila, you've already got your $(x,y)$!
+
+** Calculator Magic
+
+   Casio's got a mode for this too. Graph -> Type -> r=
+
+** Take-home message
+
+   - Calm down, it's just an equation.
+   - $x=r\cos\theta$ and $y=r\sin\theta$
+
+* 3F Derivatives of Parametrically Defined Functions
+
+  This looks pretty simple as well. $\frac{dy}{dx}=\frac{y'}{x'}$, or more formally:
+  $$\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$$.
+
+  Also, $$\frac{d^2y}{dx^2} = \frac{d}{dx}(\frac{dy}{dx}) = \frac{\frac{d}{dt}\frac{dy}{dx}}{\frac{dx}{dt}}$$
+  I supposed informally that would be $$\frac{d^2y}{dx^2} = \frac{\frac{dy}{dx}'}{x'}$$
+
+  Assuming that \(x=f(t), y=g(t)\) are diffrentiable.
+
+** Example
+
+   Find the first and second derivative of $x=2t^3,y=t^4$. (I know the book uses trig functions of $t$)
+
+   $$\frac{dy}{dx} = \frac{y'}{x'} = \frac{4t^3}{6t^2} = \frac{2}{3}t$$
+
+   \begin{equation}
+   \frac{d^2y}{dx^2} &= \frac{\frac{dy}{dx}'}{x'} \\
+   &= \frac{\frac{2}{3}}{6t^2} \\
+   &= \frac{2}{18t^2} \\
+   &= \frac{1}{9t^2}
+   \end{equation}
+
+** Function of tangent
+
+   I guess they give you the parameter, so just plug that in to your $\frac{dy}{dx}$ and you got the $m$ part of the linear equation.
+
+   For the $(x,y)$, plug in the parameter to the equations for $x$ and $y$, and you've got a point to get the $c$ from for the linear equation.
+
+   Easy peasy.
+
+** Collision with Parametric equations
+
+   Equate $x_1$ and $x_2$ and get the resulting $t$. Then test that $t$ while equating $y_1$ and $y_2$, and the the $y$s are equal, you got a true collision point!
+
+** Take-home message
+
+   - For parametric equations, $\frac{dy}{dx}=\frac{y'}{x'}$
+   - And $\frac{d^2y}{dx^2}=\frac{\frac{dy}{dx}'}{x'}$
+   - Plug in parameters for tangent lines (easy algebra)
+   - Test equality of $x$s and $y$s for a given $t$ resulting from the equivalence of $t$ from the $x$s.
+
+* 3J Indeterminate Forms and L'Hôpital's Rule
+** Indeterminate forms
+   Uhh, $$\frac{0}{0}, \frac{\infty}{\infty}, 0 \times \infty, \infty-\infty, 0^0, 1^\infty, \infty^0$$
+
+** L'Hôpital's Rule
+
+   This rule is used to find limits of indeterminates of the form \frac{0}{0} and \frac{\infty}{\infty}. It won't work if the limits are not indeterminates of these two forms.
+
+   Looks like the book has four rules, but basically if your limit to a finite number or to infinity results in $\frac{0}{0}$ or $\frac{\infty}{\infty}$, then you can differentiate the numerator and the denominator functions and try again.
+   $$\lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)}$$
+   $$\lim_{x\to \infty} \frac{f(x)}{g(x)} = \lim_{x\to \infty} \frac{f'(x)}{g'(x)}$$
+
+   The rule can be repeated. Of course, if either $f(x)$ or $g(x)$ cannot be differentiated, then the rule does not work.
+
+   I don't think I need to give examples, this is pretty intuitive.
+
+** Other indeterminate forms
+
+   If you get indeterminates of the form $0\times\infty$, then try to convert it to an equivalent indeterminate of the form $\frac{0}{0}$. It should work.
+
+   Example (this is from the book):
+  $$ \lim_{x \to \infty} x\sin \frac{1}{x} = \lim_{x \to \infty} \frac{\sin \frac{1}{x}}{\frac{1}{x}} $$
+
+  
+  For the indeterminates that are exponents, like $1^\infty$ and $\infty^0$, we can use the natural log to "remove" the exponent.
+
+  Example with $1^\infty$ (from the book):
+  \begin{equation}
+  \lim_{x\to 0} (1+x)^\frac{1}{x}
+  \text{let} y = (1+x)^\frac{1}{x}
+  \ln y = \frac{1}{x}\ln (1+x)
+  \lim_{x\to 0} \ln y = \lim_{x\to 0}\frac{1}{x}\ln (1+x)
+  \end{equation}
+  And now it's $0\times\infty$, so we can just do what we did earlier. Don't forget to remove the $\ln$ at the end!
+
+  Example with $\infty^0$ (also from the book):
+  \begin{equation}
+  \lim_{x\to\infty} x^\frac{1}{x}
+  \text{let} y = x^\frac{1}{x}
+  \ln y = \frac{1}{x}\ln x = \frac{ln x}{x}
+  \end{equation}
+  Basically it's the same as the previous example.
+
+** Take-home message
+
+   - If your limit end up as $\frac{0}{0}$ or $\frac{\infty}{\infty}$, then you can differentiate the numerator and the denominator functions and try again to get the limit
+   - If you get $0\times\infty$, rearrange the limit to \frac{0}{0} and try the above method
+   - If you get exponents, then remove the exponent with a natural log, and then combine the above methods
+
+* Conclusion
+
+  So far so good.
