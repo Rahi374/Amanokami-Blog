@@ -67,11 +67,11 @@ Example: \(\int_0^4 xy dx\), \(x=4\sin\theta\), \(y=2\sin\theta\)
 </p>
 
 <p>
-We would simply plug in \(x\) into \(x\) and \(y\) into \(y\). \(dx=\cos\theta d\theta\), so we plug in that for \(dx\). The limits also have to be converted, which we can just do by plugging the limits into the \(x\) equations and finding \(\theta\) : \(0=\sin 0\), \(4=4\sin\frac{\pi}{2}\)
+We would simply plug in \(x\) into \(x\) and \(y\) into \(y\). \(dx=4\cos\theta d\theta\), so we plug in that for \(dx\). The limits also have to be converted, which we can just do by plugging the limits into the \(x\) equations and finding \(\theta\) : \(0=\sin 0\), \(4=4\sin\frac{\pi}{2}\)
 </p>
 
 <p>
-The integral then becomes \(\int_0^{\frac{\pi}{2}}\sin\theta 2\sin\theta d\theta\) and we can compute it normally.
+The integral then becomes \(\int_0^{\frac{\pi}{2}}4\sin\theta 2\sin\theta 4\cos\theta d\theta\) and we can compute it normally.
 </p>
 </div>
 
@@ -117,19 +117,19 @@ I suppose we can do something like
 
 <p>
 So the find the <b>arc length</b> from <b>parametric equations</b>, we use:
-$$s = \int_a^b \sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2} dt$$
+$$s = \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2} dt$$
 Where \(a\) and \(b\) are values of \(t\) where the arc is in between.
 </p>
 
 <p>
 For the arc length of <b>\(y=f(x)\)</b>, we use:
-$$s = \int_a^b \sqrt{(1+(\frac{dy}{dx})^2} dx$$
+$$s = \int_a^b \sqrt{\left(1+(\frac{dy}{dx}\right)^2} dx$$
 Where \(a\) and \(b\) are values of \(x\) where the arc is in between.
 </p>
 
 <p>
 And for the arc length of <b>\(x=g(y)\)</b>, we use:
-$$s = \int_a^b \sqrt{(1+(\frac{dx}{dy})^2} dy$$
+$$s = \int_a^b \sqrt{(1+\left(\frac{dx}{dy}\right)^2} dy$$
 Where \(a\) and \(b\) are values of \(y\) where the arc is in between.
 </p>
 
@@ -173,15 +173,17 @@ Then we just compute the definite integral, leaving \(b\) as the variable \(b\),
 Example (from the book) \(\int_1^\infty \frac{1}{x^2} dx\):
 </p>
 <ul class="org-ul">
-<li>\(= \lim_{\b\to\infty} \int_1^b \frac{1}{x^2} dx\)
+<li>\(= \lim_{b\to\infty} \int_1^b \frac{1}{x^2} dx\)
 </li>
-<li>\(= \lim_{b\to\infty} \left -\frac{1}{x}\right|_1^b\)
+<li>\(= \lim_{b\to\infty} -\frac{1}{x}|_1^b\)
 </li>
 <li>\(= \lim_{b\to\infty} \left(-\frac{1}{b} - -\frac{1}{1} \right)\)
 </li>
 <li>\(= \lim_{b\to\infty} \left(1 -\frac{1}{b} \right)\)
 </li>
-<li>\(= 1 - \frac{1}{\infty} = 1\)
+<li>\(= 1 - \frac{1}{\infty}\)
+</li>
+<li>\(=1\)
 </li>
 </ul>
 
@@ -213,7 +215,7 @@ $$\int_a^b f(x) dx = \lim_{k\to b^-} \int_a^k f(x) dx$$
 </p>
 
 <p>
-If \(f(x)\) becomes infinite at at \(c\) such that \(a<c<b\),
+If \(f(x)\) becomes infinite at at \(c\) and \(c\) is in between \(a\) and \(b\),
 $$\int_a^b f(x) dx = \lim_{k\to c^-} \int_a^k f(x) dx + \lim_{m\to c^+} \int_m^b f(x) dx$$
 </p>
 
@@ -222,7 +224,7 @@ If the <b>limits exist, then the integral converges</b> and there is a solution.
 </p>
 
 <p>
-The construction of the limit-integrals should be intuitional. I'm not going to give an example for this one. The actualy working is similar to the type 1 improper integral, just with the different limit set-up. Just do some practice problems.
+The construction of the limit-integrals should be intuitional. I'm not going to give an example for this one. The actual working is similar to the type 1 improper integral, just with the different limit set-up. Just do some practice problems.
 </p>
 </div>
 </div>
@@ -274,7 +276,7 @@ Mmm. Remember when we had parametric equations and position vectors and velocity
 </p>
 
 <p>
-Apparently this section is basically problem-solving using those and calculus. Mostly stuff like "find the parametric equations of the motion of the &lt;object&gt;" or "find its position vector" or "find it's &lt;position/velcity/acceleration&gt; at time t".
+Apparently this section is basically problem-solving using those and calculus. Mostly stuff like "find the parametric equations of the motion of the &lt;object&gt;" or "find its position vector" or "find its &lt;position/velcity/acceleration&gt; at time t".
 </p>
 
 <p>
