@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>AP Calc BC in a week - Part 4 - Amanokami Blog</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Paul Elder" />
+    <meta name="description" content="Learning AP Calculus BC in a week - Part 4" />
+    <meta name="keywords" content="ap" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="/">Amanokami Blog</a></h1>
+        <p>Emacs of an IB Student</p>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="https://github.com/Rahi374">GitHub</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+        <form method="get" id="searchform" action="//www.google.com/search">
+          <input type="text" class="field" name="q" id="s" placeholder="Search">
+          <input type="hidden" name="as_sitesearch" value="amanokami.net">
+        </form>
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>AP Calc BC in a week - Part 4</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Today we'll be doing:
+</p>
+<ul class="org-ul">
+<li>9C Euler's Method
+</li>
+<li>9E3 Logistic Growth
+
+<p>
+Let's start!
+</p>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">9C Euler's Method</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Euler's Method is used to find particular/specific solutions of first-order differential equations numerically.
+</p>
+
+<p>
+First we choose a point and find the slope at the point from the given differential equation. Then we use that point and the slope to get the next point (which is one \(\Delta x\) away), and repeat until the question tells us to stop. This allows us to approximate a particular/specific solution.
+</p>
+
+<p>
+Basically it draws a sequence of straight lines. Also it might be useful to remember $$\Delta y = \frac{dy}{dx} \times \Delta x$$, though this is kind of intuitional.
+</p>
+
+<p>
+I'm not going to do an example since this is pretty simple.
+</p>
+
+<p>
+The book does warn us, however, to <b>pay attention to the domain</b>. Otherwise you could foolishly cross a vertical asymptote and end up with a curve not even close to where it should be. (For instance, solutions with negative exponents)
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">9E3 Logistic Growth</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+So this comes from section 9E, which are different cases of Exponential Growth and Decay. Case 1 is Exponential growth, case 2 is Restricted growth, and case 3 is Logistic growth.
+</p>
+
+<ul class="org-ul">
+<li>Exponential growth is when the growth rate is proportional to the current population: \(y'=ky\)
+</li>
+<li>Restricted growth is when the growth rate is proportional to the difference between a constant (\(A\)) and the current population: \(y'=k(A-y)\)
+
+<p>
+<b>Logistic growth</b> is basically a combination of those two, where the growth rate is proportional to both the current population and to the difference between a constant and the current population: $$y'=ky(A-y)$$
+This is the <b>Logistic differential equation</b>.
+</p>
+
+<p>
+The solution of this logistic differential equation is:
+$$y=\frac{A}{1+Ce^{-Akt}}$$
+</p>
+
+<p>
+Apparently in most cases, \(C>1\) so the initial \(A\) is less than \(\frac{A}{2}\)
+</p>
+
+<p>
+In <b>all</b> cases, the exponent of \(e\) is negative, which means as \(t\to\infty\) :
+</p>
+<ul class="org-ul">
+<li>\(Ce^{-Akt} \to 0\)
+</li>
+<li>denominator of \(y \to 1\)
+</li>
+<li>\(y \to A\)
+</li>
+</ul>
+<p>
+tl;dr \(A\) is the upper limit of \(y\).
+</p>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">(Pseudo-Graphical) Comparison of growth models</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Exponential (unrestricted) growth has \(y\) grow indefinitely, while restricted growth has \(y\) grow approaching \(A\).
+</p>
+
+<p>
+Logistic growth is a combination of these two, where it starts off unrestricted (concave up, \(y'' > 0\)), and then reaches a maximum growth rate (\(y'' = 0\)), and then it becomes restricted and approaches \(A\) (concave down, \(y'' < 0\)). This results in an S-shaped curve.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2">Applications</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+I'm going to skip applications of logistic growth models since it's mostly intuitional. You would use this model to model exponential growth but a growth that has a limiting factor causing the growth to not be able to grow indefinitely.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3">Questions</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+I think these types of questions can be pretty easily solved by plugging in to equations and rearranging them. There's usually a \(y\) where \(t=0\) from which you can find \(C\), and a \(y\) where \(t=1\) from which you can find \(k\) to get the equation, and the question gives you \(A\).
+</p>
+
+<p>
+Personally, I think don't bother with the derivation of \(y\) from the logistic differential equation, since it's not that hard to memorize anyway.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4">Take-home message</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>Logistic growth is unrestricted \(\to\) restricted growth
+</li>
+<li>The logistic differential equation is proportional to the <b>current population</b> and the <b>difference between the ceiling and the current population</b>
+<ul class="org-ul">
+<li>Which is \(y'=ky(A-y)\)
+</li>
+<li>And its solution is \(y=\frac{A}{1+Ce^{-Akt}}\)
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Conclusion</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Hm. Is it just me or are these sections getting simpler.
+</p>
+
+<p>
+w00t! Just one more day left! Chapter 10: Sequences and Series! It looks long though... I hope it's not that bad...
+</p>
+
+<p>
+Also I need to remember I have other subjects as well... I've been spending all my time on calculus...
+</p>
+</div>
+</div>
+
+</div>
+</div>
+    <div>
+      <div class="post-meta">
+        <span title="post date" class="post-info">2016-03-25</span>
+        <span title="last modification date" class="post-info">2016-03-26</span>
+        <span title="tags" class="post-info"><a href="/tags/ap/">ap</a></span>
+        <span title="author" class="post-info">Paul Elder</span>
+      </div>
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          //var disqus_developer = 1;
+          var disqus_identifier = "/blog/2016/03/25/ap-calc-bc-in-a-week-part-4";
+          var disqus_url = "http://amanokami.net/blog/2016/03/25/ap-calc-bc-in-a-week-part-4";
+          var disqus_shortname = 'amanokami';
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </section>
+      <script src="//code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="/media/js/main.js"></script>
+      <div class="footer">
+        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.x (<a href="http://orgmode.org">Org mode</a> 8.x)</p>
+        <p>
+          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:paul &lt;dot&gt; elder &lt;at&gt; amanokami &lt;dot&gt; net">Paul Elder</a>
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>
