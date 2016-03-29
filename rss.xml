@@ -4,10 +4,17 @@
     <title>Amanokami Blog</title>
     <link>http://amanokami.net/</link>
     <description>Emacs of an IB Student</description>
-    <pubDate>Sat, 26 Mar 2016 01:54:33 JST</pubDate>
-    <lastBuildDate>Sat, 26 Mar 2016 01:54:33 JST</lastBuildDate>
+    <pubDate>Tue, 29 Mar 2016 14:38:01 JST</pubDate>
+    <lastBuildDate>Tue, 29 Mar 2016 14:38:01 JST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>AP Calc BC in a week - Part 5</title>
+      <link>http://amanokami.net/blog/2016/03/29/ap-calc-bc-in-a-week-part-5</link>
+      <description><![CDATA[Learning AP Calculus BC in a week - Part 5]]></description>
+      <pubDate>2016-03-29</pubDate>
+      <guid>http://amanokami.net/blog/2016/03/29/ap-calc-bc-in-a-week-part-5</guid>
+    </item>
     <item>
       <title>AP Calc BC in a week - Part 4</title>
       <link>http://amanokami.net/blog/2016/03/25/ap-calc-bc-in-a-week-part-4</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[My way of organizing my home directory.]]></description>
       <pubDate>2016-03-09</pubDate>
       <guid>http://amanokami.net/blog/2016/03/09/home-directory-organization</guid>
-    </item>
-    <item>
-      <title>Introduction - Emacs of an IB Student</title>
-      <link>http://amanokami.net/blog/2016/03/01/introduction</link>
-      <description><![CDATA[First post in my blog, introducing Emacs for an IB student]]></description>
-      <pubDate>2016-03-01</pubDate>
-      <guid>http://amanokami.net/blog/2016/03/01/introduction</guid>
     </item>
   </channel>
 </rss>
