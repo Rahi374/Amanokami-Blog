@@ -4,16 +4,30 @@
     <title>Amanokami Blog</title>
     <link>http://amanokami.net/</link>
     <description>Emacs of an IB Student</description>
-    <pubDate>Tue, 29 Mar 2016 14:40:55 JST</pubDate>
-    <lastBuildDate>Tue, 29 Mar 2016 14:40:55 JST</lastBuildDate>
+    <pubDate>Thu, 31 Mar 2016 00:44:25 JST</pubDate>
+    <lastBuildDate>Thu, 31 Mar 2016 00:44:25 JST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
       <title>AP Calc BC in a week - Part 5</title>
       <link>http://amanokami.net/blog/2016/03/29/ap-calc-bc-in-a-week-part-5</link>
       <description><![CDATA[Learning AP Calculus BC in a week - Part 5]]></description>
-      <pubDate>2016-03-29</pubDate>
+      <pubDate>2016-03-31</pubDate>
       <guid>http://amanokami.net/blog/2016/03/29/ap-calc-bc-in-a-week-part-5</guid>
+    </item>
+    <item>
+      <title>AP Calc BC in a week - Part 6</title>
+      <link>http://amanokami.net/blog/2016/03/29/ap-calc-bc-in-a-week-part-6</link>
+      <description><![CDATA[Learning AP Calculus BC in a week - Part 6]]></description>
+      <pubDate>2016-03-31</pubDate>
+      <guid>http://amanokami.net/blog/2016/03/29/ap-calc-bc-in-a-week-part-6</guid>
+    </item>
+    <item>
+      <title>News: Hacked!</title>
+      <link>http://amanokami.net/blog/2016/03/30/hacked</link>
+      <description><![CDATA[I got hacked!]]></description>
+      <pubDate>2016-03-31</pubDate>
+      <guid>http://amanokami.net/blog/2016/03/30/hacked</guid>
     </item>
     <item>
       <title>AP Calc BC in a week - Part 4</title>
@@ -63,20 +77,6 @@
       <description><![CDATA[Tutorial for setting up OpenVPN]]></description>
       <pubDate>2016-03-10</pubDate>
       <guid>http://amanokami.net/blog/2016/03/10/tutorial-setting-up-openvpn</guid>
-    </item>
-    <item>
-      <title>Web: Learning Flexbox with games</title>
-      <link>http://amanokami.net/blog/2016/03/08/flexbox-defense</link>
-      <description><![CDATA[Flexbox defense and Flexbox Froggy are pretty cool games for learning flexbox]]></description>
-      <pubDate>2016-03-09</pubDate>
-      <guid>http://amanokami.net/blog/2016/03/08/flexbox-defense</guid>
-    </item>
-    <item>
-      <title>IBEmacs: Home directory organization</title>
-      <link>http://amanokami.net/blog/2016/03/09/home-directory-organization</link>
-      <description><![CDATA[My way of organizing my home directory.]]></description>
-      <pubDate>2016-03-09</pubDate>
-      <guid>http://amanokami.net/blog/2016/03/09/home-directory-organization</guid>
     </item>
   </channel>
 </rss>
