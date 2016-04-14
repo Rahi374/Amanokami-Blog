@@ -91,17 +91,22 @@ The computer is just a strong laptop with 8GB of memory, so I gave 7GB to Minecr
 <p>
 Within the server directory, of course.
 </p>
+</div>
+</div>
 
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">The Power of Emacs</h2>
+<div class="outline-text-2" id="text-3">
 <p>
 The main component of Emacs that I used to get tab-completion (which was the thing I wanted the most) was a combination of yasnippet and auto-complete-mode, both which come with Emacs Live. These could be installed manually as well, of course, but I just happened to have Emacs Live.
 </p>
 
 <p>
-For auto-completion, within the ~/.dict file I have all the commands, the names of my users (I use a whitelist so it's fairly short), the gamerules, the enchantment names, the status names, and the slot names (for /replaceitem). Of course, more things could be added, but this was all I needed.
+For auto-complete, within the ~/.dict file I have all the commands, the names of my users (I use a whitelist so it's fairly short), the gamerules, the enchantment names, the status names, and the slot names (for /replaceitem). Of course, more things could be added, but this was all I needed.
 </p>
 
 <p>
-For yasnippet, I just added snippets (M-x yas-new-snippet) of long commands that I use commonly. For instance, I like to summon mobs at the location of a player, so I have a snipper for that:
+For yasnippet, I just added snippets (M-x yas-new-snippet) of long commands that I use commonly. For instance, I like to summon mobs at the location of a player, so I have a snippet for that:
 </p>
 
 <div class="org-src-container">
@@ -116,14 +121,18 @@ execute $1 ~ ~ ~ summon $2 ~ ~ ~ $0
 </div>
 
 <p>
-$0 where the cursor ends after summoning the snipper, $1 where the cursor is placed first, and $2 where the cursor is placed last. auto-completion lets me tab-complete the player name at $1 and the mob name at $2.
+$0 where the cursor ends after summoning the snippet, $1 where the cursor is placed first, and $2 where the cursor is placed last. auto-complete lets me tab-complete the player name at $1 and the mob name at $2.
 </p>
 </div>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3">Conclusion</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Conclusion</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+So with a combination of screen and Emacs with auto-complete-mode and yasnipper we can get primite tab-completion and ease the typing a bit.
+</p>
+
 <p>
 It's primitive but it works. It can't do as much as plugins or mods can do though, such as getting player positions or detecting griefing and hacks. If only Craftbukkit would work...
 </p>
