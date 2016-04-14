@@ -4,10 +4,17 @@
     <title>Amanokami Blog</title>
     <link>http://amanokami.net/</link>
     <description>Emacs of an IB Student</description>
-    <pubDate>Sat, 02 Apr 2016 10:24:24 JST</pubDate>
-    <lastBuildDate>Sat, 02 Apr 2016 10:24:24 JST</lastBuildDate>
+    <pubDate>Thu, 14 Apr 2016 12:08:34 JST</pubDate>
+    <lastBuildDate>Thu, 14 Apr 2016 12:08:34 JST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Minecraft Server with Emacs</title>
+      <link>http://amanokami.net/blog/2016/04/14/minecraft-server-with-emacs</link>
+      <description><![CDATA[Setting up a Minecraft server at home with Emacs]]></description>
+      <pubDate>2016-04-14</pubDate>
+      <guid>http://amanokami.net/blog/2016/04/14/minecraft-server-with-emacs</guid>
+    </item>
     <item>
       <title>AP Calc BC in a week - Part 5</title>
       <link>http://amanokami.net/blog/2016/03/29/ap-calc-bc-in-a-week-part-5</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[Learning AP Calculus BC in a week - Intro]]></description>
       <pubDate>2016-03-21</pubDate>
       <guid>http://amanokami.net/blog/2016/03/20/ap-calc-bc-in-a-week-intro</guid>
-    </item>
-    <item>
-      <title>IBEmacs: Scheduling</title>
-      <link>http://amanokami.net/blog/2016/03/13/ibemacs-scheduling</link>
-      <description><![CDATA[How to do scheduling in Emacs]]></description>
-      <pubDate>2016-03-14</pubDate>
-      <guid>http://amanokami.net/blog/2016/03/13/ibemacs-scheduling</guid>
     </item>
   </channel>
 </rss>
