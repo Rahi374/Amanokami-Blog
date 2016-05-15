@@ -1,0 +1,167 @@
+#+TITLE:       AP Calc BC in a week - End
+#+AUTHOR:      Paul Elder
+#+EMAIL:       paul.elder@amanokami.net
+#+DATE:        2016-04-01 Fri
+#+URI:         /blog/%y/%m/%d/ap-calc-bc-in-a-week-end
+#+KEYWORDS:    ap
+#+TAGS:        ap
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Learning AP Calculus BC in a week - End
+
+* Introduction
+
+  So today's the last day, and we would be doing Power Series, but I barely get this and I'd pretty much be lifting from the book stuff that I don't get so I'm just not going to write about it.
+
+  I'm just going to paste all the take-home messages (which later developed into tl;dr) here for the final wrap-up.
+
+* 1F Parametrically Defined Functions
+
+   - Get one of the parametric equations to be equal to $t$, then plug into the other (Parametric to Cartesian)
+   - Get both equal to $t$ something, and equate to each other or use a trig identity (Parametric to Cartesian trig)
+     - $x=t$, $y=f(x)$, swap $x$ and $y$ so that $x=f(x)$ and $y=t$, and easy inversions!
+   - Easy to graph.
+* 1G Polar Functions
+
+   - Calm down, it's just an equation.
+   - $x=r\cos\theta$ and $y=r\sin\theta$
+* 3F Derivatives of Parametrically Defined Functions
+
+   - For parametric equations, $\frac{dy}{dx}=\frac{y'}{x'}$
+   - And $\frac{d^2y}{dx^2}=\frac{\frac{dy}{dx}'}{x'}$
+   - Plug in parameters for tangent lines (easy algebra)
+   - Test equality of $x$ s and $y$ s for a given $t$ resulting from the equivalence of $t$ from the $x$ s.
+* 3J Indeterminate Forms and L'Hôpital's Rule
+
+   - If your limit end up as $\frac{0}{0}$ or $\frac{\infty}{\infty}$, then you can differentiate the numerator and the denominator functions and try again to get the limit
+   - If you get $0\times\infty$, rearrange the limit to $\frac{0}{0}$ and try the above method
+   - If you get exponents, then remove the exponent with a natural log, and then combine the above methods
+* 4K Motion along a curve: Velocity and Acceleration Vectors
+
+   - *Position vector* is just a vector from the origin to $(x,y)$. $x$ and $y$ conveniently correspond to the parametric equations.
+   - *Velocity vector* is just the derivative of the position vector. Just differentiate $x$ and $y$ in the position vector.
+   - *Acceleration vector* is just the derivative of the velocity vector. Just differentiate $\frac{dx}{dt}$ and $\frac{dy}{dt}$ in the velocity vector.
+   - To find the slope, $\frac{dy}{dx}=\frac{y'(t)}{x'(t)}$
+   - To find the magnitude, just use good 'ol Pythagoras
+* 4N Slope of a Polar Curve
+
+   - Turn the polar function into parametric equations and differentiate each, and divide $x'(\theta)$ by $y'(\theta)$ and you've got your $\frac{dy}{dx}$ !
+* 5C Integration by Partial Fractions
+
+   - We're splitting complicated fractions into smaller ones
+   - Make sure it's a proper fraction
+   - Factor out the denominator and equate the whole fraction to a number of fractions for each term in the denominator
+   - Multiply everything by the denominator
+   - Find the numerators by expansion and combination
+   - Or by using the values of $x$ where the fractions would be undefined
+* 5D Integration by Parts
+
+   - Derive the Parts formula \(\int u dv = uv - \int v du\) from the Product rule \(\frac{d}{dx}uv = u\frac{dv}{dx} = v\frac{du}{dx}\)
+   - Split your integral into $u$ and $dv$ according to *LIATE* (or *DETAIL*)
+* 6C Integrals involving Parametrically Defined Functions
+
+   I don't think we need one.
+   - Plug in $x$ and $y$ and the $dx$ from the parametric equation, and convert the limits with the parametric equation.
+* 7C Arc Length
+
+  - \(ds^2 = dx^2 + dy^2\)
+  - *arc length* from *parametric equations*: \(s = \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2} dt \)
+  - arc length of *$y=f(x)$*: \( s = \int_a^b \sqrt{1+\left(\frac{dy}{dx}\right)^2} dx \)
+  - arc length of *$x=g(y)$*: \(s = \int_a^b \sqrt{1+\left(\frac{dx}{dy}\right)^2} dy \)
+
+* 7D Improper Integrals
+
+   - Improper integrals have infinite bounds or points of discontinuity
+   - To evaluate such integrals, turn the infinite bound(s) or point(s) of discontinuity into a limit
+   - Comparison test: if a function is less than a converging function then it must also converge ; if a function is greater than a diverging function then it must also diverge
+* 8B Motion along a Plane Curve
+
+  Remember when we had parametric equations and position vectors and velocity vectors and acceleration vectors? That plus problem solving.
+* 9C Euler's Method
+  
+  First we choose a point and find the slope at the point from the given differential equation. Then we use that point and the slope to get the next point (which is one \(\Delta x\) away), and repeat until the question tells us to stop. This allows us to approximate a particular/specific solution.
+
+  It draws a sequence of straight lines. Also it might be useful to remember $$\Delta y = \frac{dy}{dx} \times \Delta x$$, though this is kind of intuitional.
+
+  *Pay attention to the domain*.
+* 9E3 Logistic Growth
+   - Logistic growth is unrestricted $\to$ restricted growth
+   - The logistic differential equation is proportional to the *current population* and the *difference between the ceiling and the current population*
+     - Which is $y'=ky(A-y)$
+     - And its solution is $y=\frac{A}{1+Ce^{-Akt}}$
+* 10A Sequences and Series
+   tl;dr A sequence is a (function) list of numbers, and if the limit ( $n\to\infty$ ) of its function is $L$, then it converges to $L$.
+
+   tl;dr Add all the numbers in a sequence = series
+
+** Types of Series
+   *p-series* is the series of form $$\sum_{k=1}^\infty \frac{1}{k^p}$$, where $p$ is a constant.
+
+   *Harmonic series* is the p-series where $p=1$, ie $$\sum_{k=1}^\infty \frac{1}{k}$$
+
+   *Geometric series* is the sum of a first term $a$ and terms of a common ratio $r$ : $$\sum_{k=1}^\infty ar^{k-1}$$
+
+** Convergence
+
+   tl;dr If you keep adding and it approaches a number, then the series converges to that number
+
+** Theorems of Convergence of Divergence
+
+*** If \(\sum a_n\) converges, then $\lim_{n\to\infty}a_n=0$
+
+    - By contraposition, this also means that if \(\lim_{k\to\infty}a_n\neq 0\), \(\sum a_n\) diverges
+    - The converse is not true; if the limit is zero, the summation may or may not converge (if you know your truth tables this won't be a problem)
+    - Note that this means that the _terms_ go to 0, not the series
+
+*** You can add a finite number of terms to a summation without affecting its convergence/divergence
+
+    - This means that \(\sum_{k=1}^\infty a_k\) and \(\sum_{k=m}^\infty a_k\) both converge or both diverge
+
+*** A series can be multiplied by a nonzero constant without affecting its convergence/divergence
+
+    - This means that \(\sum_{k=1}^\infty a_k\) and \(c\sum_{k=1}^\infty a_k\) both converge or both diverge
+
+*** If two series converge, the sum of the two series converges
+
+    - If \(\sum a_n\) and \(\sum b_n\) both converge, \(\sum (a_n+b_n)\) converges
+
+*** If the terms of a convergent series are regrouped, the new series is also convergent
+
+* 10B Tests for Convergence of Series
+
+   - If the *terms of the series don't approach zero*, then the series *diverges*
+   - If and only if a *geometric series has $|r|<1$*, the series *converges*.
+
+** Tests for Convergence of nonnegative series
+
+   *Integral Test*
+   tl;dr turn your (always positive) series into an integral and if it converges, your series converges
+
+   *p-series test*
+   If *\(p\le 1\) then the series diverges*, and if *$p>1$ then the series converges*. (for p-series)
+
+   *Comparison test*
+   tl;dr series less than converging series converges, series greater than diverging series diverges.
+
+   *Limit comparison test*
+   tl;dr If the limit of series A over series B is finite and nonzero, then the series both converge or both diverge.
+
+   *Ratio test*
+   tl;dr Limit of next term over previous term. If $<1$, converges, if $>1$, diverges.
+
+   *nth root test*
+   If limit $\lim_{n\to\infty}\sqrt[n]{a_n}$ is $<1$ then it converges, if it is $>1$ then it diverges. If it doesn't exist or if it equals 1 then it doesn't work.
+
+** Tests for alternating series
+
+   tl;dr An alternating series converges if each term is less than the previous one, and the limit of the series is zero.
+
+   You should know what an alternating series is and about absolute convergence/divergence.
+
+   The sum of the first $n$ terms of an alternating series yields an approximation of the limit of the series: \(\sum_{k=1}^n (-1)^{k+1} a_k\)
+
+* Conclusion
+
+  And I think that's it! Also,, *practice*! Like a lot. Seriously.
+
+  Have fun!

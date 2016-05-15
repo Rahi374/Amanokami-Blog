@@ -1,0 +1,44 @@
+#+TITLE:       Web: Learning Flexbox with games
+#+AUTHOR:      Paul Elder
+#+EMAIL:       paul.elder@amanokami.net
+#+DATE:        2016-03-08 Tue
+#+URI:         /blog/%y/%m/%d/flexbox-defense
+#+KEYWORDS:    css, flexbox, game, learning, web
+#+TAGS:        css, flexbox, game, learning, web
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Flexbox defense and Flexbox Froggy are pretty cool games for learning flexbox
+
+* Flexbox Defense
+
+  So I was scrolling down Twitter when I noticed this game: Flexbox Defense! It's a tower defense game where you use flexbox CSS rules to position the defense towers.
+
+  [[file:./img/flexboxdefense-screenshot.png]]
+
+  [[file:./img/flexboxdefense-control.png]]
+
+  Of course, one could simply read the documentation for flexbox rules, but I feel like this game is a really good way to learn, since it's fun and you get practice!
+
+  It covers =justify-content=, =align-items=, =flex-direction=, =order=, and =align-self=.
+
+* Flexbox Froggy
+
+  [[file:./img/flexboxfroggy-screenshot.png]]
+
+  [[file:./img/flexboxfroggy-control.png]]
+
+
+  A bit of reading and I found out that this was based on Flexbox Froggy, which it quite good too. It has slightly less flashy graphics, but it has more levels and covers more properties: =flex-wrap=, =flex-flow=, and =align-content= (in addition to the ones Flexbox Defense overs).
+
+  I hope there are more games to learn CSS with.
+
+* Links
+
+  - Flexbox Defense: [[http://www.flexboxdefense.com/]]
+  - Flexbox Froggy: [[http://flexboxfroggy.com]]
+
+* Extra
+
+  I realize this is a short post but I wanted to share this finding. I also wanted to test out uploading images through org-page. And I need to do something about Disqus not working...
+
+  UPDATE: (2016-03-09) I got the images working! Also realized I forgot to add links so I'm going to do that now.

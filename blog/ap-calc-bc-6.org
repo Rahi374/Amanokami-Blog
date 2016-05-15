@@ -1,0 +1,156 @@
+#+TITLE:       AP Calc BC in a week - Part 6
+#+AUTHOR:      Paul Elder
+#+EMAIL:       paul.elder@amanokami.net
+#+DATE:        2016-03-30 Wed
+#+URI:         /blog/%y/%m/%d/ap-calc-bc-in-a-week-part-6
+#+KEYWORDS:    ap
+#+TAGS:        ap
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Learning AP Calculus BC in a week - Part 6
+
+* Introduction
+
+  Well, evidently I failed to do it in 5 days. Ah well.
+
+  Today we'll be continuing with Series, testing for convergence.
+
+* Tests for convergence of Infinite series
+
+  Calm down, it's not that bad.
+
+** nth term test
+
+   This test is just the contrapositive of the first theorem we did last time:
+
+   *If \(\lim_{n\to\infty}a_n\neq 0\), \(\sum a_n\) diverges*
+
+   Apparently it's good to start with this test.
+
+   *If the terms don't approach zero, then the series diverges*
+
+   Beware that if the terms do approach zero, it doesn't mean that the series converges!
+
+** Geometric series test
+
+   *The geometric series \(\sum ar^n\) converges if and only if $|r|<1$.*
+
+   *If $|r|<1$, then the sum is $\frac{a}{1-r}$*
+
+** tl;dr
+
+   - If the *terms of the series don't approach zero*, then the series *diverges*
+   - If and only if a *geometric series has $|r|<1$*, the series *converges*.
+
+* Tests for convergence of Nonnegative series
+
+  A *nonnegative series* is a series where all its terms are \(\ge 0\)
+
+** Integral test
+
+   I'm going to be non-rigorous here.
+
+   $a_n=f(n)$, so if $f$ is a continuous, positive, always decreasing function, then then *\(\sum a_n\) converges if and only if \(\int_1^\infty f(x)dx\) converges*
+
+   I suppose it's intuitive? If the infinite integral of your function/series converges then your series converges. Do some practice and review.
+
+   tl;dr turn your (always positive) series into an integral and if it converges, your series converges
+
+** p-series test
+
+   Ooh this one's pretty easy. It's a test that only works on p-series, and if *\(p\le 1\) then the series diverges*, and if *$p>1$ then the series converges*.
+
+   This just comes straight from the p-series section. Go check that one out. The harmonic series ( $p=1$ ) diverges, the p-series where $p=2$ converges, so you can kinda remember it from that.
+
+   Remember that a p-series looks like \(\sum_{n=1}^\infty \frac{1}{n^p}\), where $p$ is a constant.
+
+** Comparison test
+
+   I think we did this before.
+
+   If a series \(\sum a_n\) is always *less than* \(\sum u_n\), and we know that *\(\sum u_n\) converges*, then *\(\sum a_n\) also converges*.
+
+   If a series \(\sum a_n\) is always *greater than* \(\sum u_n\), and we know that *\(\sum u_n\) diverges*, then *\(\sum a_n\) also diverges*.
+
+   Apparently *p-series* and *geometric series* are good series to compare to, since we can easily know if they will converge or diverge depending on their $p$ or $r$.
+
+   You should also remember that in order to compare, you can *discard a finite number of terms* or *multiply the series by a nonzero constant* and not affect the convergence.
+
+   tl;dr series less than converging series converges, series greater than diverging series diverges.
+
+** Limit comparison test
+
+   If $\lim_{n\to\infty}\frac{a_n}{b_n}$ is finite and nonzero, then \(\sum a_n\) and \(\sum b_n\) *both converge* or *both diverge*.
+
+   Apparently this test is used if the comparison test fails, for instance (from the book) $\frac{1}{2n+1}$ seems to be related to the harmonic series but is less than the harmonic series so the comparison test won't work.
+
+   If the limit is zero or infinity, try another test.
+
+   tl;dr If the limit of series A over series B is finite and nonzero, then the series both converge or both diverge.
+
+** Ratio test
+
+   If limit $\lim_{n\to\infty}\frac{a_{n+1}}{a_n}$ is $<1$ then it converges, if it is $>1$ then it diverges. If it doesn't exist or if it equals 1 then it doesn't work.
+
+   I suppose the direction of the comparison could be remembered pretty easily since it's the ratio of the next term over the previous term. If it's $<1$, then that means that the next term is less than the previous term so it converges. If it's $>1$, then that means that the next term is greater than the previous term so it diverges.
+
+   tl;dr Limit of next term over previous term. If $<1$, converges, if $>1$, diverges.
+
+** nth root test
+
+   I totally do not understand this test so let's memorize it:
+
+   If limit $\lim_{n\to\infty}\sqrt[n]{a_n}$ is $<1$ then it converges, if it is $>1$ then it diverges. If it doesn't exist or if it equals 1 then it doesn't work.
+
+   The conditions are exactly the same as the ratio test.
+
+   I guess this is used for series who are like complicated-expression to the power of $n$.
+
+* Alternating Series and Absolute convergence
+
+** What is an alternating series?
+
+   An alternating series is a series where the terms have mixed signs. One term is positive, next is negative, next is positive, next is negative, as so on:
+
+   $$\sum_{k=1}^\infty (-1)^{k+1} a_k = a_1 - a_2 + a_3 - a_4 + \cdots + (-1)^{k+1} a_k + \cdots$$
+
+   Where $a_k>0$.
+
+   Series whose terms are all negative can use the tests for nonnegative series, so this alternating series is needs a separate test for convergence.
+
+   tl;dr Alternating series have + - + -... terms.
+
+** Alternating Series test
+
+   An alternating series converges if:
+   - \(a_{n+1} < a_n\) for all $n$
+   - \(\lim_{n\to\infty} a_n = 0\)
+
+   This should be pretty intuitive (like all these rules are). The first condition basically says that each next term, if you take the absolute, is less than the previous one. Thus, the terms will always decrease. The second condition ensures that the decrease is fast enough to go to zero.
+
+   tl;dr An alternating series converges if each term is less than the previous one, and the limit of the series is zero.
+
+** Absolute Convergence/Divergence
+
+   If you take the absolute of each term of an alternating series and it is convergent/divergent, then it is said to be /absolutely/ convergent/divergent. If the alternating series is convergent/divergent but its absolute version is not, then the alternating series is said to be /conditionally/ convergent/divergent.
+
+   If you're testing for absolute convergence, start off with the general *nth term test* (if the terms don't approach zero, the series diverges), then go on to do the nonnegative tests. If it absolutely converges then it'll conditionally onverge as well, but if the absolute series diverges, then you need to do the alternating series test.
+
+   Just do +some+ a lot of practice.
+
+** Approximating the Limit of Alternating Series
+
+   The sum of the first $n$ terms of an alternating series yields an approximation of the limit of the series.
+   $$\sum_{k=1}^n (-1)^{k+1} a_k$$
+
+   This means that the error from the actual limit is just the amount of the next term.
+
+   The series converges by oscillation, if it passes the convergence tests.
+
+   Uh... I think that's it? there's not much to say here.
+
+* Conclusion
+
+  I think that's it. w00t! One more section! Power Series next time!
+
+  Make sure you practice!

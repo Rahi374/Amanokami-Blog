@@ -1,0 +1,181 @@
+#+TITLE:       AP Calc BC in a week - Part 2
+#+AUTHOR:      Paul Elder
+#+EMAIL:       paul.elder@amanokami.net
+#+DATE:        2016-03-21 Mon
+#+URI:         /blog/%y/%m/%d/ap-calc-in-a-week-part-2
+#+KEYWORDS:    ap
+#+TAGS:        ap
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Learning AP Calculus BC in a week - Part 2
+
+* Introduction
+  Today we'll be doing:
+     - 4K Motion along a curve: Velocity and Acceleration Vectors
+     - 4N Slope of a Polar Curve
+     - 5C Integration by Partial Fractions
+     - 5D Integration by Parts
+
+  Let's start!
+
+* 4K Motion along a curve: Velocity and Acceleration Vectors
+  
+  So we've got a pair of parametric equations $x(t)$ and $y(t)$, and a point $P$ moves along the curve. At a given $t$, $P$ will be at $(x,y)$, where the x and y coordinates conveniently coincide with their functions at the given $t$.
+
+** Position Vector
+
+  That means that a vector can be drawn from the origin to $(x,y)$, and this will be called the *position vector*: $$\vec{R} = \langle x,y \rangle$$
+
+** Velocity Vector
+
+  Thus a *velocity vector* can be derived from $\vec{R}$ by finding its derivative: $$\vec{v} = \frac{d\vec{R}}{dt} = \langle \frac{dx}{dt}, \frac{dy}{dt} \rangle$$
+
+  The slope is: $$\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$$ Which we defined yesterday as the derivative of a parametric function!!
+
+  The magnitude is simple Pythagoras: $$|v| = \sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2}$$
+
+  If you draw the velocity vector beginning at $P$, the slope gives you the direction and the magnitude gives you the speed of the velocity of the moving point $P$.
+
+** Acceleration Vector
+
+   The *acceleration vector* can likewise be derived from the velocity vector by differentiating it: $$\vec{a} = \frac{d\vec{v}}{dt} = \frac{d^2\vec{R}}{dt^2} = \langle \frac{d^2x}{dt^2}, \frac{d^2y}{dt^2} \rangle$$
+
+   The magnitude can be found with good 'ol Pythagoras again: $$|a| = \sqrt{(\frac{d^2x}{dt^2})^2+(\frac{d^2y}{dt^2})^2}$$
+
+** Take-home message
+
+   - *Position vector* is just a vector from the origin to $(x,y)$. $x$ and $y$ conveniently correspond to the parametric equations.
+   - *Velocity vector* is just the derivative of the position vector. Just differentiate $x$ and $y$ in the position vector.
+   - *Acceleration vector* is just the derivative of the velocity vector. Just differentiate $\frac{dx}{dt}$ and $\frac{dy}{dt}$ in the velocity vector.
+   - To find the slope, $\frac{dy}{dx}=\frac{y'(t)}{x'(t)}$
+   - To find the magnitude, just use good 'ol Pythagoras
+
+* 4N Slope of a Polar Curve
+
+  To find the slope of a polar curve, first you make it parametric, then you can easily differentiate that. There's a super-complicated formula that you might as not even try to remember.
+
+  Say you have a polar function $r=f(\theta)$, then it can be expressed parametrically as $$x=r\cos\theta=f(\theta)\cos\theta$$ and $$y=r\sin\theta=f(\theta)\sin\theta$$
+
+  Then, you can simply differentiate these two (product rule) to get $\frac{dx}{d\theta}$ and $\frac{dy}{d\theta}$:
+  $$\frac{dx}{d\theta} = f'(\theta)\cos\theta - f(\theta)\sin\theta$$
+  $$\frac{dy}{d\theta} = f'(\theta)\sin\theta + f(\theta)\cos\theta$$
+
+  Then you just divide those parametric equations by doing $$\frac{dy}{dx} = \frac{\frac{dy}{d\theta}}{\frac{dx}{d\theta}}$$ which you can do yourself so I'm not going to show you. (Also the result is that long complicated formula that you might as well not memorize)
+
+  The given example questions are simple stuff like find the slope of a function at a given $\theta$, simple stuff that we've been doing for the entirety of differential calculus, so there should be no problem.
+
+** Take-home message
+
+   - Turn the polar function into parametric equations and differentiate each, and divide $x'(\theta)$ by $y'(\theta)$ and you've got your $\frac{dy}{dx}$ !
+
+* 5C Integration by Partial Fractions
+
+  Ooh integral calculus now.
+
+  So the main concern here is splitting a complicated polynomial fraction like $\frac{x^2-2x-8}{x^3+2x^2-3x}$ into many less complicated fractions so we can easily integrate it. Also if you have an improper fraction, split it into proper fractions before you do this method, since this method only works with proper fractions.
+
+  First, we have to factor the denominator:
+  $$\frac{x^2-2x-8}{x(x-3)(x+1)}$$
+  This will be set to be equal to three partial fractions, one for each term, in the form $\frac{A}{x-a}$: $$\frac{A}{x}, \frac{B}{x-3}, \frac{C}{x+1}$$
+
+  This results in $$\frac{x^2-2x-8}{x(x-3)(x+1)} = \frac{A}{x} + \frac{B}{x-3} + \frac{C}{x+1}$$ which can also be expressed as $$x^2-2x-8 = A(x-3)(x+1) + Bx(x+1) + Cx(x-3)$$
+
+  Then there are two methods to find $A$, $B$, and $C$.
+
+** Method 1
+
+   The first method is to expand and then combine the second equation.
+   $$x^2-2x-8 = A(x-3)(x+1) + Bx(x+1) + Cx(x-3)$$
+   $$x^2-2x-8 = Ax^2 + -2Ax + -3A + Bx^2 + Bx + Cx^2 + -3Cx$$
+   $$x^2-2x-8 = (A+B+C)x^2 + (-2A+B-3C)x -3A$$
+
+   Then you can equate the coefficients and then use simultaneous equations to solve for $A$, $B$, and $C$.
+
+** Method 2
+
+   The second method is a lot easier. In the first equation, $$\frac{x^2-2x-8}{x(x-3)(x+1)} = \frac{A}{x} + \frac{B}{x-3} + \frac{C}{x+1}$$, there are some illegal values, namely $x=0$, $x=3$, and $x=-1$. However, these values must still hold for the second equation, and in fact we can plug them in to that equation and it'll remove some terms, making it a lot easier to find $A$, $B$, and $C$.
+
+   Try it! Plug in $x=0$, $x=3$, and $x=-1$ into $$x^2-2x-8 = A(x-3)(x+1) + Bx(x+1) + Cx(x-3)$$ and get your $A$, $B$ and $C$ and compare the results with Method 1! They should be the same.
+
+** After A, B and C
+
+   Now just plug in $A$, $B$, and $C$, and you've got your partial fractions!
+
+** Take-home message
+
+   - We're splitting complicated fractions into smaller ones
+   - Make sure it's a proper fraction
+   - Factor out the denominator and equate the whole fraction to a number of fractions for each term in the denominator
+   - Multiply everything by the denominator
+   - Find the numerators by expansion and combination
+   - Or by using the values of $x$ where the fractions would be undefined
+
+* 5D Integration by Parts
+
+** Derivation
+
+  Okay... so this is basically the product rule for integrals. First we'll derive the Parts formula (so that you don't have to memorize it):
+
+  We start off with the Product Rule:
+  $$\frac{d}{dx}(uv) = u\frac{dv}{dx} + v\frac{du}{dx}$$
+  Which simplifies to:
+  $$d(uv) = udv + vdu$$
+  Rearrange:
+  $$udv = d(uv) - vdu$$
+  And integrate:
+  $$\int u dv = uv - \int v du$$
+  This is the Parts formula.
+
+** Usage
+
+   Basically we have to split the product that is being integrated into a $u$ and a $dv$. Then we would differentiate the $u$ to get a $du$ and integrate the $dv$ to get a $v$. That means that $dv$ better be easy to integrate and \(\int v du\) better be easy to integrate as well.
+
+   Example: \(\int x \sin x dx\)
+   $$u = x, du = dx$$
+   $$dv = \sin x dx, v = -\cos x$$
+   $$\int x \sin x dx = x \times -\cos x - \int -\cos x dx$$
+
+   Sometimes Parts will need to be repeated, for example:
+   $$\int x^2 \sin x dx$$
+   $$u = x^2, du = 2x dx$$
+   $$dv = \sin x dx, v = -\cos x$$
+   $$\int x^2 \sin x dx = x^2 \times -\cos x - \int -\cos x \times 2x dx$$
+   And we just do Parts again on the second integral on the right hand side.
+
+** Tic-Tac-Toe Method
+
+   This method looks useful, but I can't get it straight (I feel like I'm going to lose track of the lines) (Hahaha Lines? Straight? Get it?) so I'm just going to skip this and if I ever get something like $u=x^4$ then I'll just do Parts over and over again. Hopefully I never have to deal with $u=x^{10}$.
+
+** LIATE
+
+   This isn't from the book, but I found it on Wikipedia and it looks absolutely fabulous!
+
+   Basically this says that the highest thing on the list should be $u$, and here is the list:
+   1. *L* - Logarithmic
+   2. *I* - Inverse Trig
+   3. *A* - Algebraic
+   4. *T* - Trig
+   5. *E* - Exponential
+
+   Conversely the lowest thing on the list should be $dv$.
+
+   If *LIATE* is hard to remember, you can also remember it as *DETAIL*, where *D* means that this is better for *dv*.
+
+** Take-home message
+
+   - Derive the Parts formula \(\int u dv = uv - \int v du\) from the Product rule \(\frac{d}{dx}uv = u\frac{dv}{dx} = v\frac{du}{dx}\)
+   - Split your integral into $u$ and $dv$ according to *LIATE* (or *DETAIL*)
+
+* Conclusion
+
+  Still good. Maybe doing some practice problems is a good idea.
+
+  I think at the end of the week I'll compile all the take-home messages into one post.
+
+  Next time we'll be doing:
+     - 6C Integrals involving Parametrically Defined Functions
+     - 7C Arc Length
+     - 7D Improper Integrals
+     - 8B Motion along a Plane Curve
+
+  Stay tuned!

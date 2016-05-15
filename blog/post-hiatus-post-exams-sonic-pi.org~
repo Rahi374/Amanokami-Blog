@@ -1,0 +1,63 @@
+#+TITLE:       Post Hiatus, Post Exams - Part 1: Sonic Pi
+#+AUTHOR:      Paul Elder
+#+EMAIL:       paul.elder@amanokami.net
+#+DATE:        2016-05-15 Sun
+#+URI:         /blog/%y/%m/%d/little-update-post-hiatus-post-exams
+#+KEYWORDS:    misc, ib, music, sonic-pi
+#+TAGS:        misc, ib, music, sonic-pi
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: A little update, post-hiatus, post-exams. Sonic Pi.
+
+* Introduction
+
+This post is going to be very unstructured and rant-like.
+
+I apologize (to my presumably very few readers) for the hiatus. My excuse is that I had IB exams (and AP Calculus BC) for the past couple weeks. They were all pretty good, besides HL Physics Paper 2. Check out my About page for my list of IB courses.
+
+Okay maybe I'll put a bit of structure in. Since my last post, I've been messing with Sonic Pi, HTML5, Node.js, and Ajax.
+
+* Sonic Pi
+
+  I think this was the earliest thing I did since my last post. I didn't have such a good experience with it, since Sonic Pi wouldn't work very well with my system (now it doesn't load at all, actually), so I have to run Sonic Pi from Emacs, but that has no documentation and auto-complete, and I can't record. (By the way, sonic-pi.el from here: [[https://github.com/repl-electric/sonic-pi.el]])
+
+  Despite these drawbacks, playing with synths and samples are fun and quite... different... from normal music composition and performance. It's difficult if you expect "playing" the Sonic Pi to be the same as playing the clarinet, or composing on MuseScore. Although, it seems the notion of time can be grasped in the traditional sense as well, but I can't seem to get straight which method to do, and since I do it in Emacs, I lack an easy-to-access list of synths and samples.
+
+  The most interesting thing I've done (through dissecting a sample from the [[http://sonic-pi.net/][Sonic Pi website]]) and discovered is ocean waves. Here's the excerpt from the Sonic Pi website (with new-lines inserted for clarity in places):
+
+#+BEGIN_SRC ruby
+with_fx :reverb, mix: 0.5 do
+  loop do
+    s = synth
+          [:bnoise, :cnoise, :gnoise].choose,
+          amp: rrand(0.5, 1.5),
+          attack: rrand(0, 4),
+          sustain: rrand(0, 2),
+          release: rrand(1, 3),
+          cutoff_slide: rrand(0, 3),
+          cutoff: rrand(60, 80),
+          pan: rrand(-1, 1),
+          pan_slide: 1,
+          amp: rrand(0.5, 1)
+    control s, pan: rrand(-1, 1), cutoff: rrand(60, 115)
+    sleep rrand(2, 3)
+  end
+end
+#+END_SRC
+
+  It's so cool what happens here. So first we're defining a synth of either *bnoise*, *cnoise*, or *gnoise*. They're all just noise, but the next few transformations make them interesting. Once the noice is chosen, it is multiplied with an *attack* - *sustain* - *release* envelope (not sure if that's the technical term), so the noise gets louder, stays at a given loudness, and the fades out. These times are chosen randomly, as well as its general loudness (*amplitude*). This is already enough to make the noise sound like different waves.
+
+  After this the transformations just add more effect, like *pan* make the wave sounds like it's coming from a different (random) direction. When the waves (haha puns) are all coming from different directions, it really sounds like you're standing on a beach and it sounds so soothing. I'm not sure what *cutoff* does, but I know that *cutoff_slide* and *pan_slide* determine the time taken for a pan or cutoff change as specified with *control s*. I think that just adds more variety and change to the wave sounds.
+
+  The last part is the *sleep*. The random interval makes the numerous waves sound more... natural, and like they're all waving over each other. Different intervals make the waves sound more sparse or more frequent.
+
+  So yeah, I get it's not exactly music. I'm not a great fan of contemporary music. But try doing this on a clarinet, or MuseScore. I think Sonic Pi gives one more control over the sounds directly, which lets one do lots of cool things with the sound directly. I think it is possible to "make music" with the Sonic Pi too, but it takes a different type of technique, and it's definitely not the same method of expression as traditional music.
+
+  I know I haven't shown the main features of Sonic Pi, but this is my favorite thing that I have done with it so far. I don't think I'll be a professional live coder. I prefer to do tests and get the right sound and the right sequence and do a recording and let that go. I know that defeats one of the purposes of Sonic Pi, but it's another way to play the instrument. I'll probably just play with it on occasion and see what cool stuff it can do. Maybe create a few pieces.
+  
+  Before Sonic Pi I actually used to do quite a bit of Overtone ([[https://github.com/overtone/overtone]]), which is like Sonic Pi but in Clojure. (I think Overtone came first though) I think that Overtone gives one a bit more control over the sounds, but it's more low-level, and requires more paratheses. Sonic Pi is probably more approchable and easier to learn, and most importantly, easy to install. Although Overtone does have awesome integration with Emacs... but if I remember correctly I couldn't find good Overtone docs. They're both good. Try them both out if you like music and computers.
+
+
+* HTML5
+
+  I'm always worried I misuse this term

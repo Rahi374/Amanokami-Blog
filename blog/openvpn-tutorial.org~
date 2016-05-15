@@ -1,0 +1,210 @@
+#+TITLE:       Tutorial: Setting up OpenVPN
+#+AUTHOR:      Paul Elder
+#+EMAIL:       paul.elder@amanokami.net
+#+DATE:        2016-03-10 Thu
+#+URI:         /blog/%y/%m/%d/tutorial-setting-up-openvpn
+#+KEYWORDS:    tutorial
+#+TAGS:        tutorial
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Tutorial for setting up OpenVPN
+
+* Introduction
+
+  I'm sure there are many tutorials of these on the internet, but either I couldn't get them to work, or I had to disregard some portion of the instructions. Also I had absolutely no guidance for how to connect to the VPN from NetworkManager, so this tutorial will cover that as well.
+
+** What this tutorial *will* cover:
+
+   - How to set up an OpenVPN server on a *Debian-based machine* at home (In reality I use a Raspberry Pi with Raspbian)
+   - How to connect to the OpenVPN server from *NetworkManager* (Desktop) and *OpenVPN Connect* (Android/iOS)
+   - How to *port forward* from your (commercial) wireless router at home to your server at home
+
+** What this tutorial *will not* cover:
+
+   - Why OpenVPN?
+   - Why VPN?
+   - How to use all of OpenVPN's features
+
+* How to set up OpenVPN
+
+  Our VPN will use the standard port 1194 with UDP, will have LZO compression, AES-128-CBC cipherm, HMAC Authentication, TLS Authentication to prevent DoSes, and will be certificate-based.
+
+** Router setup
+   1. Get the internal IP address of your server (either sudo ifconfig from the server or look at the client list from the router setup page)
+   2. Get the internal IP address of your router (you used it to get to the setup page)
+   3. Get your external IP address (echoip.com)
+   4. Go to port forwarding and forward port 1194 with UDP to the internal IP address of your server (feel free to change the port and protocol, just remember to put it in the server and client config files later)
+
+** Server-side setup
+  1. Install OpenVPN
+#+BEGIN_SRC ascii
+$ sudo apt-get install openvpn
+#+END_SRC
+  2. Create keys and load scripts (might as well be superuser so that you don't need sudo for every line)
+#+BEGIN_SRC ascii
+$ sudo cp -r /usr/share/doc/openvpn/examples/easy-rsa/2.0/ /etc/openvpn/easy-rsa
+$ cd /etc/openvpn/easy-rsa
+$ su
+# ./source vars
+#+END_SRC
+  3. Build CA certificate
+#+BEGIN_SRC ascii
+# ./build ca
+#+END_SRC
+  4. Build *Server* key pair. The Common Name must be equal to server_name. Challenge password must remain blank and the certificate must be signed.
+#+BEGIN_SRC ascii
+# ./build-key-server server_name
+#+END_SRC
+  5. Build *Client* key pair. The Common Name must be equal to client_name. A PEM pass phrase that the user will remember must be set. Challenge password must remain blank and the certificate must be signed. Repeat this step for multiple clients.
+#+BEGIN_SRC ascii
+# ./build-key-pass client_name
+#+END_SRC
+  6. If the client key pair generated in the last step is for an Android/iOS device, then the keys must be encrypted. Repeat this step if necessary for multiple clients.
+#+BEGIN_SRC ascii
+# openssl rsa -in keys/client_name.key -des3 -out keys/client_name.des3.key
+#+END_SRC
+  7. Build the *Diffie-Hellman keys*
+#+BEGIN_SRC ascii
+# ./build-dh
+#+END_SRC
+  8. Create the *HMAC keys*
+#+BEGIN_SRC ascii
+# openvpn --genkey --secret keys/ta.key
+#+END_SRC
+  9. Edit or create /etc/openvpn/server.conf
+#+BEGIN_SRC ascii
+local 192.168.2.2 ## Internal IP address of your OpenVPN Server
+dev tun 
+proto udp ## Change this to tcp if you want
+port 1194 ## Change this port if you want
+ca /etc/openvpn/easy-rsa/keys/ca.crt 
+cert /etc/openvpn/easy-rsa/keys/server_name.crt ## Change server_name to your server name
+key /etc/openvpn/easy-rsa/keys/server_name.key ## Change server_name to your server name
+dh /etc/openvpn/easy-rsa/keys/dh1024.pem
+server 10.8.0.0 255.255.255.0 
+# server and remote endpoints 
+ifconfig 10.8.0.1 10.8.0.2 
+# Add route to Client routing table for the OpenVPN Server 
+push "route 10.8.0.1 255.255.255.255" 
+# Add route to Client routing table for the OpenVPN Subnet 
+push "route 10.8.0.0 255.255.255.0" 
+# your local subnet 
+push "route 192.168.2.2 255.255.255.0" ## The first IP address should be the internal IP address of your OpenVPN Server
+# Set primary domain name server address to the SOHO Router 
+# If your router does not do DNS, you can use Google DNS 8.8.8.8 
+push "dhcp-option DNS 192.168.2.1" ## This IP should be the internal IP address of your router
+# Override the Client default gateway by using 0.0.0.0/1 and 
+# 128.0.0.0/1 rather than 0.0.0.0/0. This has the benefit of 
+# overriding but not wiping out the original default gateway. 
+push "redirect-gateway def1" 
+client-to-client 
+duplicate-cn 
+keepalive 10 120 
+tls-auth /etc/openvpn/easy-rsa/keys/ta.key 0 
+cipher AES-128-CBC 
+comp-lzo 
+user nobody 
+group nogroup 
+persist-key 
+persist-tun 
+status /var/log/openvpn-status.log 20 
+log /var/log/openvpn.log 
+verb 1
+#+END_SRC
+Follow the instructions that begin with ##. Basic IP knowledge is expected.
+  10. Enable IP forwarding. Open /etc/sysctl.conf and uncomment
+#+BEGIN_SRC ascii
+net.ipv4.ip_forward = 1
+#+END_SRC
+then apply the change with
+#+BEGIN_SRC ascii
+# sysctl -p
+#+END_SRC
+  11. Not sure if this step is necessary, but it looks like it opens up port 1194 with UDP. Change udp and 1194 if necessary.
+#+BEGIN_SRC ascii
+# iptables -I INPUT -p udp -m udp --dport 1194 -j ACCEPT
+#+END_SRC
+
+  To allow another client to use the proxy, just repeat step 5 and if necessary, 6.
+
+** Client-side (NetworkManager)
+   1. Copy client_name.crt, client_name.key, ca.crt, and ta.key from the server at /etc/openvpn/easy-rsa/keys. The copy *must* be done by scp or by offline methods, otherwise your key will become only as strong as the email service you wanted to use to send the keys. It may be a good idea to delete the keys from the server once you put them in your client.
+   2. sudo apt-get install openvpn (or whatever your distro requires)
+   3. Open NetworkManager
+   4. Fill in the fields:
+      - Connection name: Whatever you want.
+      - General: Leave as is
+      - VPN:
+	- Gateway: External IP address or hostname of your server
+	- Type: Certificates (TLS)
+	- User Certificate: client_name.crt
+	- CA Certificate: ca.crt
+	- Private Key: client_name.key
+	- Private Key Password: Pass phrase entered during the server-side setup
+	- Advanced
+	  - General
+	    - Check "Use LZO data compression"
+	    - If you changed the port, check "Use custom gateway port" and input the port number
+	    - If you decided to use TCP, check "Use a TCP connection"
+	  - Security
+	    - Cipher: AES-128-CBC
+	    - HMAC Authentication: Default
+	  - TLS Authentication
+	    - Check "Use additional TLS authentication"
+	    - Key file: ta.key
+	    - Key direction: 1
+      - IPV4 and IPv6 Settings: Leave as is
+
+** Client-side (Android/iOS)
+   1. On a computer, follow step 1 of Client-side with NetworkManager, except copy client_name.3des.key instead of client_name.key.
+   2. Create a new file and call it client_name.ovpn (changing client_name as appropriate)
+   3. Input (= copy and paste) the following into client_name.ovpn, replacing hostname with your hostname or external IP, and following the instructions for pasting the certificates and keys.
+#+BEGIN_SRC ascii
+client
+dev tun
+proto udp
+remote hostname 1194
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+mute-replay-warnings
+ns-cert-type server
+key-direction 1
+cipher AES-128-CBC
+comp-lzo
+verb 1
+mute 20
+
+<ca>
+-----BEGIN CERTIFICATE-----
+<paste contents of ca.crt here>
+-----END CERTIFICATE-----
+</ca>
+<cert>
+-----BEGIN CERTIFICATE-----
+<paste contents of client_name.crt here>
+-----END CERTIFICATE-----
+</cert>
+<key>
+-----BEGIN RSA PRIVATE KEY-----
+<paste contents of client_name.3des.key here>
+-----END RSA PRIVATE KEY-----
+</key>
+<tls-auth>
+-----BEGIN OpenVPN Static key V1-----
+<paste contents of ta.key here>
+-----END OpenVPN Static key V1-----
+</tls-auth>
+#+END_SRC
+Don't forget to save!
+   4. Install the OpenVPN Connect app on your Android/iOS
+   5. Copy the client_name.ovpn file to the device and open it with the OpenVPN Connect app and connect to the VPN!
+
+* Conclusion
+
+  Hopefully that helps make setting up OpenVPN easier. I had the worst time trying to figure out how to get NetworkManager to work with it. I think the firewall rules might pose a problem as well. Hopefully this is more straightforward than the other tutorials out there.
+
+* Extra
+
+  I think I got the Disqus commenting working.

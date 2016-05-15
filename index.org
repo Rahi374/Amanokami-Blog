@@ -1,0 +1,19 @@
+#+TITLE:       Amanokami Blog
+#+AUTHOR:      Paul Elder
+#+EMAIL:       paul.elder@amanokami.net
+#+DATE:        2016-02-29 Mon
+#+URI:         /
+#+KEYWORDS: 
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+DESCRIPTION: Amanokami Blog of Paul Elder
+
+#+BEGIN_SRC emacs-lisp
+;; I am the frame of my keyboard
+;; Plastic is my body and current is my blood
+;; I have created over a thousand code
+;; Unknown to /dev/null, Nor known to /dev/sda
+;; Have withstood all-nighters to create many programs
+;; Yet, those hands will never hold anything
+;; So as I pray, M-x start-hacking
+#+END_SRC

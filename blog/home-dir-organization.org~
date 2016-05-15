@@ -1,0 +1,126 @@
+#+TITLE:       Home directory organization
+#+AUTHOR:      Paul Elder
+#+EMAIL:       paul.elder@amanokami.net
+#+DATE:        2016-03-08 Tue
+#+URI:         /blog/%y/%m/%d/home-directory-organization
+#+KEYWORDS:    ib, emacs, organization
+#+TAGS:        ib, emacs, organization
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: My way of organizing my home directory.
+
+* Directory organization
+
+  You used to be a kid. You grew up with an 8GB USB memory stick and you threw all your school files in there and life was good. I suppose these days kids use Google Drive.
+
+  Then you grew up and heard you were going to start IB and decided that you should probably reorganize your home folder/directory. Then you run into another problem: how should we organize it?
+
+  If you search the internet, you could find a lot of ways to organize your home directory, but the problem is that they are all home dirs of working people, and so they are not designed for The (IB) Student.
+
+  Here's my ~ (only including the important first-level subdirectories):
+#+BEGIN_SRC ascii
+~/.emacs.d/
+~/bin/
+~/build/
+~/dev/
+~/Documents/
+~/Downloads/
+~/Music/
+~/Pictures/
+~/school/
+~/tmp/
+#+END_SRC
+
+  My ~ contains a mixture of the Gnome-generated directories (Documents, Downloads, Music, Pictures), and FHS-style directories (bin, dev, tmp), and two extra ones (build, school).
+
+  It should be relatively self-explanatory what each directory is for.
+  - *~/.emacs.d* is my most important dotfile. In fact, I moved .emacs into here as init.el so that it's easier to back up. I don't elaborate on this directory in this post
+  - *~/bin* is for my own binaries and scripts (and is included in my $PATH)
+  - *~/build* is for... well, building. Download the source code and compile here and leave the source here.
+  - *~/dev* is my second-biggest tree and it hosts all of my programming stuff. More on this guy later.
+  - *~/Documents* is for (miscellaneous) documents.
+  - *~/Downloads* is for Downloads.
+  - *~/Music* is for Music.
+  - *~/Pictures* is for Pictures (and screenshots).
+  - *~/school* is my biggest tree and hosts all of my school things. More on this later (in fact this is the most important directory of this post)
+  - *~/tmp* is for temporary files. Some people may prefer to put downloads or even builds here, but I throw in old and temporary stuff here. This guy usually doesn't get backed up.
+
+* The Schoolwork Directory
+
+  As an IB student, this is going to be your most important directory (+that should be backed up as often as possible+ Probably would've been a good idea to back it up once in a while.) There are two ways to organize it, since there are two main sets of directories that you need: the subjects, and the data for each subject. One way is to have all the data (eg. books, classwork, handouts, img, notes, projects) all be right under school/, with a full set of subjects being under those, or the opposite, which is what I did (I'm omitting quite a bit of content):
+#+BEGIN_SRC ascii
+~/school/cas/
+~/school/chemistry/
+~/school/college/
+~/school/econ/
+~/school/ee/
+~/school/english/
+~/school/group4/
+~/school/guid/
+~/school/hr/
+~/school/math/
+~/school/misc/
+~/school/physics/
+~/school/spanish/
+~/school/tok/
+~/school/trinity/
+~/school/schedule.org
+~/school/week1.org
+~/school/week2.org
+~/school/template.tex
+#+END_SRC
+(Now you know which classes I take)
+
+=schedule.org= is my org file (like, The Org File) that contains all my tasks and deadlines and schedules and everything. I'll be covering scheduling in another post. =week1.org= and =week2.org= are org files that hold my biweekly class schedule. Before I used cfw and org calendars in Emacs, I used to have a function that would paste the weekly schedule into my =schedule.org= where I could then put in my assignments manually. =template.tex= is my LaTeX template that works for all subjects (with some deletion necessary before you begin writing). I think I'll cover that in another post too.
+
+And so under each subject, I have subdirectories to hold subject-individual data (using English as an example):
+#+BEGIN_SRC ascii
+~/school/english/books/
+~/school/english/handouts/
+~/school/english/img/
+~/school/english/projects/
+~/school/english/notes.org
+#+END_SRC
+Where under =books/= I would have pdfs of books, =handouts/= would have pdfs or pictures of handouts, =img/= would have pictures, and =projects/= would have all the homework and assignments. Each homework/assignment has it's own directory, so that you can either version control it or you don't don't have to mess with organization if you LaTeX everything. =notes.org= has all your notes, which I'll cover in another post how to take notes with org.
+
+This is the directory structure that I found to have helped me the most throughout my IB life. Hopefully it helps you too!
+
+* The Dev Directory
+
+  No, dev does not stand for devices.
+
+  I've heard of some people organizing their dev directory by having a =dev/projects= and =dev/src= and =dev/scratch= or whatever, but rather than organizing them by status, I prefer to organize them by language. Thus, by dev directory is just simply:
+#+BEGIN_SRC ascii
+~/dev/blog/
+~/dev/c/
+~/dev/cad/
+~/dev/js/
+~/dev/music/
+~/dev/node/
+~/dev/overtone/
+~/dev/pgn/
+~/dev/pnd/
+~/dev/rails/
+~/dev/renpy/
+~/dev/ruby/
+~/dev/sh/
+~/dev/sicp/
+~/dev/sync/
+~/dev/www/
+#+END_SRC
+I don't think I have to explain each directory. Within each directory I just create a subdirectory for each new project, or under a =misc/= subdirectory if I'm just playing or testing.
+
+* Just a few words
+  - How to organize your home folder
+  - How to organize your home directory
+  - How to organize My Documents
+  - How to organize your work files
+  - How to organize your files
+  - How to organize your filesystem
+
+    Hopefully these will be enough for Google to catch this page for people with similar problems but different wording.
+
+* Extra
+
+  Disqus isn't working and I haven't figured out how to insert pictures into org-page. Ugh. Also I don't know how to change that copyright year at the bottom. I think I'll link this to a Twitter account soon too.
+

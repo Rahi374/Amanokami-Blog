@@ -1,0 +1,44 @@
+#+TITLE:       AP Calc BC in a week - Intro
+#+AUTHOR:      Paul Elder
+#+EMAIL:       paul.elder@amanokami.net
+#+DATE:        2016-03-20 Sun
+#+URI:         /blog/%y/%m/%d/ap-calc-bc-in-a-week-intro
+#+KEYWORDS:    ap
+#+TAGS:        ap
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Learning AP Calculus BC in a week - Intro
+
+* Introduction
+
+  So at school I take AP Calculus AB (since I already finished IB Math SL last year), but I'm taking the BC exam so I have to cover the BC material on my own, and it's spring break now so perfect studying time. I thought it would be cool to document my progress. Or at least my notes. Not too sure if that's a good idea or not, but ah well.
+
+  Also, I'm using Barron's book (AP Calculus), 13th edition, and I'm only going to do the BC sections. In 4 or 5 days!
+
+  Basically it'll be reading and then note-taking. Also I have a Casio fx-CG 20 calculator, so I get a bunch of easy features that the TI-84 doesn't get, so if I introduce some function and you don't have it on your TI, too bad!
+
+* Plan
+  
+  1. Day 1
+     - 1F Parametrically Defined Functions
+     - 1G Polar Functions
+     - 3F Derivatives of Parametrically Defined Funcitons
+     - 3J Indeterminate Forms and L'Hopital's Rule
+  2. Day 2
+     - 4K Motion along a curve: Velocity and Acceleration Vectors
+     - 4N Slope of a Polar Curve
+     - 5C Integration by Partial Fractions
+     - 5D Integration by Parts
+  3. Day 3
+     - 6C Integrals involving Parametrically Defined Functions
+     - 7C Arc Length
+     - 7D Improper Integrals
+     - 8B Motion along a Plane Curve
+  4. Day 4
+     - 9C Euler's Method
+     - 9E3 Logistic Growth
+  5. Day 5
+     - 10 Sequences and Series
+
+       I'll shorten it to 4 days if I can, otherwise hopefully I can stick to this plan.
+
