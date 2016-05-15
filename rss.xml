@@ -4,9 +4,8 @@
     <title>Amanokami Blog</title>
     <link>http://amanokami.net/</link>
     <description>Emacs of an IB Student</description>
-<<<<<<< HEAD
-    <pubDate>Mon, 16 May 2016 00:45:14 JST</pubDate>
-    <lastBuildDate>Mon, 16 May 2016 00:45:14 JST</lastBuildDate>
+    <pubDate>Mon, 16 May 2016 00:51:05 JST</pubDate>
+    <lastBuildDate>Mon, 16 May 2016 00:51:05 JST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
@@ -29,52 +28,11 @@
       <description><![CDATA[Learning AP Calculus BC in a week - Part 3]]></description>
       <pubDate>2016-05-16</pubDate>
       <guid>http://amanokami.net/blog/2016/03/23/ap-calc-bc-in-a-week-part-3</guid>
-=======
-    <pubDate>Thu, 14 Apr 2016 12:14:57 JST</pubDate>
-    <lastBuildDate>Thu, 14 Apr 2016 12:14:57 JST</lastBuildDate>
-    <docs>http://www.rssboard.org/rss-specification</docs>
-    <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
-    <item>
-      <title>Minecraft Server with Emacs</title>
-      <link>http://amanokami.net/blog/2016/04/14/minecraft-server-with-emacs</link>
-      <description><![CDATA[Setting up a Minecraft server at home with Emacs]]></description>
-      <pubDate>2016-04-14</pubDate>
-      <guid>http://amanokami.net/blog/2016/04/14/minecraft-server-with-emacs</guid>
-    </item>
-    <item>
-      <title>AP Calc BC in a week - Part 5</title>
-      <link>http://amanokami.net/blog/2016/03/29/ap-calc-bc-in-a-week-part-5</link>
-      <description><![CDATA[Learning AP Calculus BC in a week - Part 5]]></description>
-      <pubDate>2016-04-02</pubDate>
-      <guid>http://amanokami.net/blog/2016/03/29/ap-calc-bc-in-a-week-part-5</guid>
-    </item>
-    <item>
-      <title>AP Calc BC in a week - End</title>
-      <link>http://amanokami.net/blog/2016/04/01/ap-calc-bc-in-a-week-end</link>
-      <description><![CDATA[Learning AP Calculus BC in a week - End]]></description>
-      <pubDate>2016-04-02</pubDate>
-      <guid>http://amanokami.net/blog/2016/04/01/ap-calc-bc-in-a-week-end</guid>
-    </item>
-    <item>
-      <title>AP Calc BC in a week - Part 6</title>
-      <link>http://amanokami.net/blog/2016/03/30/ap-calc-bc-in-a-week-part-6</link>
-      <description><![CDATA[Learning AP Calculus BC in a week - Part 6]]></description>
-      <pubDate>2016-04-01</pubDate>
-      <guid>http://amanokami.net/blog/2016/03/30/ap-calc-bc-in-a-week-part-6</guid>
-    </item>
-    <item>
-      <title>News: Hacked!</title>
-      <link>http://amanokami.net/blog/2016/03/30/hacked</link>
-      <description><![CDATA[I got hacked!]]></description>
-      <pubDate>2016-03-31</pubDate>
-      <guid>http://amanokami.net/blog/2016/03/30/hacked</guid>
->>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
     </item>
     <item>
       <title>AP Calc BC in a week - Part 4</title>
       <link>http://amanokami.net/blog/2016/03/25/ap-calc-bc-in-a-week-part-4</link>
       <description><![CDATA[Learning AP Calculus BC in a week - Part 4]]></description>
-<<<<<<< HEAD
       <pubDate>2016-05-16</pubDate>
       <guid>http://amanokami.net/blog/2016/03/25/ap-calc-bc-in-a-week-part-4</guid>
     </item>
@@ -98,37 +56,11 @@
       <description><![CDATA[Learning AP Calculus BC in a week - End]]></description>
       <pubDate>2016-05-16</pubDate>
       <guid>http://amanokami.net/blog/2016/04/01/ap-calc-bc-in-a-week-end</guid>
-=======
-      <pubDate>2016-03-26</pubDate>
-      <guid>http://amanokami.net/blog/2016/03/25/ap-calc-bc-in-a-week-part-4</guid>
-    </item>
-    <item>
-      <title>AP Calc BC in a week - Part 3</title>
-      <link>http://amanokami.net/blog/2016/03/23/ap-calc-bc-in-a-week-part-3</link>
-      <description><![CDATA[Learning AP Calculus BC in a week - Part 3]]></description>
-      <pubDate>2016-03-25</pubDate>
-      <guid>http://amanokami.net/blog/2016/03/23/ap-calc-bc-in-a-week-part-3</guid>
-    </item>
-    <item>
-      <title>AP Calc BC in a week - Part 1</title>
-      <link>http://amanokami.net/blog/2016/03/20/ap-calc-bc-1</link>
-      <description><![CDATA[Learning AP Calculus BC in a week - Part 1]]></description>
-      <pubDate>2016-03-21</pubDate>
-      <guid>http://amanokami.net/blog/2016/03/20/ap-calc-bc-1</guid>
-    </item>
-    <item>
-      <title>AP Calc BC in a week - Part 2</title>
-      <link>http://amanokami.net/blog/2016/03/21/ap-calc-in-a-week-part-2</link>
-      <description><![CDATA[Learning AP Calculus BC in a week - Part 2]]></description>
-      <pubDate>2016-03-21</pubDate>
-      <guid>http://amanokami.net/blog/2016/03/21/ap-calc-in-a-week-part-2</guid>
->>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
     </item>
     <item>
       <title>AP Calc BC in a week - Intro</title>
       <link>http://amanokami.net/blog/2016/03/20/ap-calc-bc-in-a-week-intro</link>
       <description><![CDATA[Learning AP Calculus BC in a week - Intro]]></description>
-<<<<<<< HEAD
       <pubDate>2016-05-16</pubDate>
       <guid>http://amanokami.net/blog/2016/03/20/ap-calc-bc-in-a-week-intro</guid>
     </item>
@@ -146,10 +78,5 @@
       <pubDate>2016-05-16</pubDate>
       <guid>http://amanokami.net/blog/2016/03/08/flexbox-defense</guid>
     </item>
-=======
-      <pubDate>2016-03-21</pubDate>
-      <guid>http://amanokami.net/blog/2016/03/20/ap-calc-bc-in-a-week-intro</guid>
-    </item>
->>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
   </channel>
 </rss>
