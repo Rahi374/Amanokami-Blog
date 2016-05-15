@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Amanokami Blog</title>
+    <link>http://amanokami.net/</link>
+    <description>Emacs of an IB Student</description>
+    <pubDate>Mon, 16 May 2016 00:40:43 JST</pubDate>
+    <lastBuildDate>Mon, 16 May 2016 00:40:43 JST</lastBuildDate>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>AP Calc BC in a week - Part 1</title>
+      <link>http://amanokami.net/blog/2016/03/20/ap-calc-bc-1</link>
+      <description><![CDATA[Learning AP Calculus BC in a week - Part 1]]></description>
+      <pubDate>2016-05-16</pubDate>
+      <guid>http://amanokami.net/blog/2016/03/20/ap-calc-bc-1</guid>
+    </item>
+    <item>
+      <title>AP Calc BC in a week - Part 2</title>
+      <link>http://amanokami.net/blog/2016/03/21/ap-calc-in-a-week-part-2</link>
+      <description><![CDATA[Learning AP Calculus BC in a week - Part 2]]></description>
+      <pubDate>2016-05-16</pubDate>
+      <guid>http://amanokami.net/blog/2016/03/21/ap-calc-in-a-week-part-2</guid>
+    </item>
+    <item>
+      <title>AP Calc BC in a week - Part 3</title>
+      <link>http://amanokami.net/blog/2016/03/23/ap-calc-bc-in-a-week-part-3</link>
+      <description><![CDATA[Learning AP Calculus BC in a week - Part 3]]></description>
+      <pubDate>2016-05-16</pubDate>
+      <guid>http://amanokami.net/blog/2016/03/23/ap-calc-bc-in-a-week-part-3</guid>
+    </item>
+    <item>
+      <title>AP Calc BC in a week - Part 4</title>
+      <link>http://amanokami.net/blog/2016/03/25/ap-calc-bc-in-a-week-part-4</link>
+      <description><![CDATA[Learning AP Calculus BC in a week - Part 4]]></description>
+      <pubDate>2016-05-16</pubDate>
+      <guid>http://amanokami.net/blog/2016/03/25/ap-calc-bc-in-a-week-part-4</guid>
+    </item>
+    <item>
+      <title>AP Calc BC in a week - Part 5</title>
+      <link>http://amanokami.net/blog/2016/03/29/ap-calc-bc-in-a-week-part-5</link>
+      <description><![CDATA[Learning AP Calculus BC in a week - Part 5]]></description>
+      <pubDate>2016-05-16</pubDate>
+      <guid>http://amanokami.net/blog/2016/03/29/ap-calc-bc-in-a-week-part-5</guid>
+    </item>
+    <item>
+      <title>AP Calc BC in a week - Part 6</title>
+      <link>http://amanokami.net/blog/2016/03/30/ap-calc-bc-in-a-week-part-6</link>
+      <description><![CDATA[Learning AP Calculus BC in a week - Part 6]]></description>
+      <pubDate>2016-05-16</pubDate>
+      <guid>http://amanokami.net/blog/2016/03/30/ap-calc-bc-in-a-week-part-6</guid>
+    </item>
+    <item>
+      <title>AP Calc BC in a week - End</title>
+      <link>http://amanokami.net/blog/2016/04/01/ap-calc-bc-in-a-week-end</link>
+      <description><![CDATA[Learning AP Calculus BC in a week - End]]></description>
+      <pubDate>2016-05-16</pubDate>
+      <guid>http://amanokami.net/blog/2016/04/01/ap-calc-bc-in-a-week-end</guid>
+    </item>
+    <item>
+      <title>AP Calc BC in a week - Intro</title>
+      <link>http://amanokami.net/blog/2016/03/20/ap-calc-bc-in-a-week-intro</link>
+      <description><![CDATA[Learning AP Calculus BC in a week - Intro]]></description>
+      <pubDate>2016-05-16</pubDate>
+      <guid>http://amanokami.net/blog/2016/03/20/ap-calc-bc-in-a-week-intro</guid>
+    </item>
+    <item>
+      <title>IBEmacs: Scheduling</title>
+      <link>http://amanokami.net/blog/2016/03/13/ibemacs-scheduling</link>
+      <description><![CDATA[How to do scheduling in Emacs]]></description>
+      <pubDate>2016-05-16</pubDate>
+      <guid>http://amanokami.net/blog/2016/03/13/ibemacs-scheduling</guid>
+    </item>
+    <item>
+      <title>Web: Learning Flexbox with games</title>
+      <link>http://amanokami.net/blog/2016/03/08/flexbox-defense</link>
+      <description><![CDATA[Flexbox defense and Flexbox Froggy are pretty cool games for learning flexbox]]></description>
+      <pubDate>2016-05-16</pubDate>
+      <guid>http://amanokami.net/blog/2016/03/08/flexbox-defense</guid>
+    </item>
+  </channel>
+</rss>
