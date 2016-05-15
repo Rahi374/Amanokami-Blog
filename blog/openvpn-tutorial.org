@@ -1,7 +1,11 @@
 #+TITLE:       Tutorial: Setting up OpenVPN
 #+AUTHOR:      Paul Elder
 #+EMAIL:       paul.elder@amanokami.net
+<<<<<<< HEAD
 #+DATE:        2016-03-10 Thu
+=======
+#+DATE:        2016-03-14 Mon
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 #+URI:         /blog/%y/%m/%d/tutorial-setting-up-openvpn
 #+KEYWORDS:    tutorial
 #+TAGS:        tutorial
@@ -9,6 +13,7 @@
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Tutorial for setting up OpenVPN
 
+<<<<<<< HEAD
 * Introduction
 
   I'm sure there are many tutorials of these on the internet, but either I couldn't get them to work, or I had to disregard some portion of the instructions. Also I had absolutely no guidance for how to connect to the VPN from NetworkManager, so this tutorial will cover that as well.
@@ -210,3 +215,5 @@ Don't forget to save!
   Source: [[https://www.sans.org/reading-room/whitepapers/networkdevs/soho-remote-access-vpn-easy-pie-raspberry-pi-34427]]
 
   I think I got the Disqus commenting working.
+=======
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093

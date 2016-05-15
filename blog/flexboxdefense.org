@@ -1,10 +1,19 @@
+<<<<<<< HEAD
 #+TITLE:       Web: Learning Flexbox with games
+=======
+#+TITLE:       Learning Flexbox with games
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 #+AUTHOR:      Paul Elder
 #+EMAIL:       paul.elder@amanokami.net
 #+DATE:        2016-03-08 Tue
 #+URI:         /blog/%y/%m/%d/flexbox-defense
+<<<<<<< HEAD
 #+KEYWORDS:    css, flexbox, game, learning, web
 #+TAGS:        css, flexbox, game, learning, web
+=======
+#+KEYWORDS:    css, flexbox, game, learning
+#+TAGS:        css, flexbox, game, learning
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Flexbox defense and Flexbox Froggy are pretty cool games for learning flexbox
@@ -13,9 +22,15 @@
 
   So I was scrolling down Twitter when I noticed this game: Flexbox Defense! It's a tower defense game where you use flexbox CSS rules to position the defense towers.
 
+<<<<<<< HEAD
   [[file:./img/flexboxdefense-screenshot.png]]
 
   [[file:./img/flexboxdefense-control.png]]
+=======
+  [[file:img/flexboxdefense-screenshot.png]]
+
+  [[file:img/flexboxdefense-control.png]]
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 
   Of course, one could simply read the documentation for flexbox rules, but I feel like this game is a really good way to learn, since it's fun and you get practice!
 
@@ -23,15 +38,22 @@
 
 * Flexbox Froggy
 
+<<<<<<< HEAD
   [[file:./img/flexboxfroggy-screenshot.png]]
 
   [[file:./img/flexboxfroggy-control.png]]
+=======
+  [[file:img/flexboxfroggy-screenshot.png]]
+
+  [[file:img/flexboxfroggy-control.png]]
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 
 
   A bit of reading and I found out that this was based on Flexbox Froggy, which it quite good too. It has slightly less flashy graphics, but it has more levels and covers more properties: =flex-wrap=, =flex-flow=, and =align-content= (in addition to the ones Flexbox Defense overs).
 
   I hope there are more games to learn CSS with.
 
+<<<<<<< HEAD
 * Links
 
   - Flexbox Defense: [[http://www.flexboxdefense.com/]]
@@ -42,3 +64,6 @@
   I realize this is a short post but I wanted to share this finding. I also wanted to test out uploading images through org-page. And I need to do something about Disqus not working...
 
   UPDATE: (2016-03-09) I got the images working! Also realized I forgot to add links so I'm going to do that now.
+=======
+  I realize this is a short post but I wanted to share this finding. I also wanted to test out uploading images through org-page. And I need to do something about Disqus not working...
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093

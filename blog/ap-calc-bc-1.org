@@ -10,13 +10,53 @@
 #+DESCRIPTION: Learning AP Calculus BC in a week - Part 1
 
 * Introduction
+<<<<<<< HEAD
   Today we'll be doing:
+=======
+
+  So at school I take AP Calculus AB (since I already finished IB Math SL last year), but I'm taking the BC exam so I have to cover the BC material on my own, and it's spring break now so perfect studying time. I thought it would be cool to document my progress. Or at least my notes. Not too sure if that's a good idea or not, but ah well.
+
+  Also, I'm using Barron's book (AP Calculus), 13th edition, and I'm only going to do the BC sections. In 4 or 5 days!
+
+  Basically it'll be reading and then note-taking. Also I have a Casio fx-CG 20 calculator, so I get a bunch of easy features that the TI-84 doesn't get, so if I introduce some function and you don't have it on your TI, too bad!
+
+* Plan
+  
+  1. Day 1
+     - 1F Parametrically Defined Functions
+     - 1G Polar Functions
+     - 3F Derivatives of Parametrically Defined Funcitons
+     - 3J Indeterminate Forms and L'Hopital's Rule
+  2. Day 2
+     - 4K Motion along a curve: Velocity and Acceleration Vectors
+     - 4N Slope of a Polar Curve
+     - 5C Integration by Partial Fractions
+     - 5D Integration by Parts
+  3. Day 3
+     - 6C Integrals involving Parametrically Defined Functions
+     - 7C Arc Length
+     - 7D Improper Integrals
+     - 8B Motion alon a Plane Curve
+  4. Day 4
+     - 9C Euler's Method
+     - 9E3 Logistic Growth
+  5. Day 5
+     - 10 Sequences and Series
+
+       I'll shorten it to 4 days if I can, otherwise hopefully I can stick to this plan.
+
+       And I guess today I'm going to be doing
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
      - 1F Parametrically Defined Functions
      - 1G Polar Functions
      - 3F Derivatives of Parametrically Defined Funcitons
      - 3J Indeterminate Forms and L'Hopital's Rule
 
+<<<<<<< HEAD
   Let's start!
+=======
+       Let's start!
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 
 * 1F Parametrically Defined Functions
 
@@ -49,7 +89,11 @@
 
    This is some pretty cool magic. When you find $f^{-1}(x)$ of $f(x)$, you are simply switching $x$ and $y$ in the equation.
 
+<<<<<<< HEAD
    So for instance, if you had an equation $$f(x) = x^2 + x + 1$$, remember that $x=t$ is the independent variable and $f(x)=y$, and you can let $$x=t, y=t^2+t+1$$. Now, just switch $x$ and $y$ !
+=======
+   So for instance, if you had an equation $$f(x) = x^2 + x + 1$$, remember that $x=t$ is the independent variable and $f(x)=y$, and you can let $$x=t, y=t^2+t+1$$. Now, just switch $x$ and $y$!
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 $$x=t^2+t+1, y=t$$
 And you've got your inverse function! Which you could convert back to a Cartesian equation by just plugging in $y$ for $t$.
 
@@ -70,7 +114,11 @@ And you've got your inverse function! Which you could convert back to a Cartesia
 
   Woah. Coordinates are $(r,\theta)$, where $r$ is the distance from the origin and $\theta$ is the angle of rotation. Polar functions are $$r=f(\theta)$$, so I guess that means that the distance depends on the angle.
 
+<<<<<<< HEAD
   Oh hey this section looks short.
+=======
+  Oh hey this sections looks short.
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 
 ** Calm down, it's just an equation
 
@@ -94,9 +142,15 @@ And you've got your inverse function! Which you could convert back to a Cartesia
 
    This isn't that hard either. Just remember:
    $$x=r\cos\theta, y=r\sin\theta$$.
+<<<<<<< HEAD
    This means that if you need to convert a polar equation to parametric, just plug in the whole polar function in $r$ and then multiply it by $\cos\theta$ or $\sin\theta$ !
 
    That also makes finding $(x,y)$ coordinates a lot easier. Just convert to parametric and vòila, you've already got your $(x,y)$ !
+=======
+   This means that if you need to convert a polar equation to parametric, just plug in the whole polar function in $r$ and then multiply it by $\cos\theta$ or $\sin\theta$!
+
+   That also makes finding $(x,y)$ coordinates a lot easier. Just convert to parametric and vòila, you've already got your $(x,y)$!
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 
 ** Calculator Magic
 
@@ -109,11 +163,19 @@ And you've got your inverse function! Which you could convert back to a Cartesia
 
 * 3F Derivatives of Parametrically Defined Functions
 
+<<<<<<< HEAD
   This looks pretty simple as well. $$\frac{dy}{dx}=\frac{y'}{x'}$$, or more formally:
   $$\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$$.
 
   Also, $$\frac{d^2y}{dx^2} = \frac{d}{dx}(\frac{dy}{dx}) = \frac{\frac{d}{dt}\frac{dy}{dx}}{\frac{dx}{dt}}$$
   I suppose informally that would be $$\frac{d^2y}{dx^2} = \frac{\frac{dy}{dx}'}{x'}$$
+=======
+  This looks pretty simple as well. $\frac{dy}{dx}=\frac{y'}{x'}$, or more formally:
+  $$\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$$.
+
+  Also, $$\frac{d^2y}{dx^2} = \frac{d}{dx}(\frac{dy}{dx}) = \frac{\frac{d}{dt}\frac{dy}{dx}}{\frac{dx}{dt}}$$
+  I supposed informally that would be $$\frac{d^2y}{dx^2} = \frac{\frac{dy}{dx}'}{x'}$$
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 
   Assuming that \(x=f(t), y=g(t)\) are diffrentiable.
 
@@ -124,6 +186,7 @@ And you've got your inverse function! Which you could convert back to a Cartesia
    $$\frac{dy}{dx} = \frac{y'}{x'} = \frac{4t^3}{6t^2} = \frac{2}{3}t$$
 
    \begin{equation}
+<<<<<<< HEAD
    \frac{d^2y}{dx^2} = \frac{\frac{dy}{dx}'}{x'} \\
    = \frac{\frac{2}{3}}{6t^2} \\
    = \frac{2}{18t^2} \\
@@ -131,6 +194,15 @@ And you've got your inverse function! Which you could convert back to a Cartesia
    \end{equation}
 
 ** Equation of tangent
+=======
+   \frac{d^2y}{dx^2} &= \frac{\frac{dy}{dx}'}{x'} \\
+   &= \frac{\frac{2}{3}}{6t^2} \\
+   &= \frac{2}{18t^2} \\
+   &= \frac{1}{9t^2}
+   \end{equation}
+
+** Function of tangent
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 
    I guess they give you the parameter, so just plug that in to your $\frac{dy}{dx}$ and you got the $m$ part of the linear equation.
 
@@ -140,14 +212,22 @@ And you've got your inverse function! Which you could convert back to a Cartesia
 
 ** Collision with Parametric equations
 
+<<<<<<< HEAD
    Equate $x_1$ and $x_2$ and get the resulting $t$. Then test that $t$ while equating $y_1$ and $y_2$, and the the $y$ s are equal, you got a true collision point!
+=======
+   Equate $x_1$ and $x_2$ and get the resulting $t$. Then test that $t$ while equating $y_1$ and $y_2$, and the the $y$s are equal, you got a true collision point!
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 
 ** Take-home message
 
    - For parametric equations, $\frac{dy}{dx}=\frac{y'}{x'}$
    - And $\frac{d^2y}{dx^2}=\frac{\frac{dy}{dx}'}{x'}$
    - Plug in parameters for tangent lines (easy algebra)
+<<<<<<< HEAD
    - Test equality of $x$ s and $y$ s for a given $t$ resulting from the equivalence of $t$ from the $x$ s.
+=======
+   - Test equality of $x$s and $y$s for a given $t$ resulting from the equivalence of $t$ from the $x$s.
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 
 * 3J Indeterminate Forms and L'Hôpital's Rule
 ** Indeterminate forms
@@ -155,7 +235,11 @@ And you've got your inverse function! Which you could convert back to a Cartesia
 
 ** L'Hôpital's Rule
 
+<<<<<<< HEAD
    This rule is used to find limits of indeterminates of the form $\frac{0}{0}$ and $\frac{\infty}{\infty}$. It won't work if the limits are not indeterminates of these two forms.
+=======
+   This rule is used to find limits of indeterminates of the form \frac{0}{0} and \frac{\infty}{\infty}. It won't work if the limits are not indeterminates of these two forms.
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 
    Looks like the book has four rules, but basically if your limit to a finite number or to infinity results in $\frac{0}{0}$ or $\frac{\infty}{\infty}$, then you can differentiate the numerator and the denominator functions and try again.
    $$\lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)}$$
@@ -177,28 +261,47 @@ And you've got your inverse function! Which you could convert back to a Cartesia
 
   Example with $1^\infty$ (from the book):
   \begin{equation}
+<<<<<<< HEAD
   \lim_{x\to 0} (1+x)^\frac{1}{x} \\
   \text{let} y = (1+x)^\frac{1}{x} \\
   \ln y = \frac{1}{x}\ln (1+x) \\
+=======
+  \lim_{x\to 0} (1+x)^\frac{1}{x}
+  \text{let} y = (1+x)^\frac{1}{x}
+  \ln y = \frac{1}{x}\ln (1+x)
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
   \lim_{x\to 0} \ln y = \lim_{x\to 0}\frac{1}{x}\ln (1+x)
   \end{equation}
   And now it's $0\times\infty$, so we can just do what we did earlier. Don't forget to remove the $\ln$ at the end!
 
   Example with $\infty^0$ (also from the book):
   \begin{equation}
+<<<<<<< HEAD
   \lim_{x\to\infty} x^\frac{1}{x} \\
   \text{let} y = x^\frac{1}{x} \\
   \ln y = \frac{1}{x}\ln x = \frac{ln x}{x} \\
+=======
+  \lim_{x\to\infty} x^\frac{1}{x}
+  \text{let} y = x^\frac{1}{x}
+  \ln y = \frac{1}{x}\ln x = \frac{ln x}{x}
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
   \end{equation}
   Basically it's the same as the previous example.
 
 ** Take-home message
 
    - If your limit end up as $\frac{0}{0}$ or $\frac{\infty}{\infty}$, then you can differentiate the numerator and the denominator functions and try again to get the limit
+<<<<<<< HEAD
    - If you get $0\times\infty$, rearrange the limit to $\frac{0}{0}$ and try the above method
+=======
+   - If you get $0\times\infty$, rearrange the limit to \frac{0}{0} and try the above method
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
    - If you get exponents, then remove the exponent with a natural log, and then combine the above methods
 
 * Conclusion
 
   So far so good.
+<<<<<<< HEAD
 
+=======
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093

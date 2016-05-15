@@ -176,6 +176,10 @@
      - 6C Integrals involving Parametrically Defined Functions
      - 7C Arc Length
      - 7D Improper Integrals
+<<<<<<< HEAD
      - 8B Motion along a Plane Curve
+=======
+     - 8B Motion alon a Plane Curve
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 
   Stay tuned!

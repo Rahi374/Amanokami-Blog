@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #+TITLE:       IBEmacs: Home directory organization
 #+AUTHOR:      Paul Elder
 #+EMAIL:       paul.elder@amanokami.net
@@ -5,6 +6,15 @@
 #+URI:         /blog/%y/%m/%d/home-directory-organization
 #+KEYWORDS:    ib, emacs, organization, ibemacs
 #+TAGS:        ib, emacs, organization, ibemacs
+=======
+#+TITLE:       Home directory organization
+#+AUTHOR:      Paul Elder
+#+EMAIL:       paul.elder@amanokami.net
+#+DATE:        2016-03-08 Tue
+#+URI:         /blog/%y/%m/%d/home-directory-organization
+#+KEYWORDS:    ib, emacs, organization
+#+TAGS:        ib, emacs, organization
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: My way of organizing my home directory.
@@ -89,7 +99,11 @@ This is the directory structure that I found to have helped me the most througho
 
   No, dev does not stand for devices.
 
+<<<<<<< HEAD
   I've heard of some people organizing their dev directory by having a =dev/projects= and =dev/src= and =dev/scratch= or whatever, but rather than organizing them by status, I prefer to organize them by language. Thus, my dev directory is just simply:
+=======
+  I've heard of some people organizing their dev directory by having a =dev/projects= and =dev/src= and =dev/scratch= or whatever, but rather than organizing them by status, I prefer to organize them by language. Thus, by dev directory is just simply:
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
 #+BEGIN_SRC ascii
 ~/dev/blog/
 ~/dev/c/
@@ -123,4 +137,7 @@ I don't think I have to explain each directory. Within each directory I just cre
 * Extra
 
   Disqus isn't working and I haven't figured out how to insert pictures into org-page. Ugh. Also I don't know how to change that copyright year at the bottom. I think I'll link this to a Twitter account soon too.
+<<<<<<< HEAD
 
+=======
+>>>>>>> caf13cd5f2b5ad21362fe048779be4cddeb80093
