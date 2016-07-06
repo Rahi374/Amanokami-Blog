@@ -4,10 +4,17 @@
     <title>Amanokami Blog</title>
     <link>http://amanokami.net/</link>
     <description>Emacs of an IB Student</description>
-    <pubDate>Tue, 21 Jun 2016 00:35:49 JST</pubDate>
-    <lastBuildDate>Tue, 21 Jun 2016 00:35:49 JST</lastBuildDate>
+    <pubDate>Wed, 06 Jul 2016 16:36:24 JST</pubDate>
+    <lastBuildDate>Wed, 06 Jul 2016 16:36:24 JST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>New plan</title>
+      <link>http://amanokami.net/blog/2016/07/06/client-side-webapp-ui-test</link>
+      <description><![CDATA[org-page is getting annoying]]></description>
+      <pubDate>2016-07-06</pubDate>
+      <guid>http://amanokami.net/blog/2016/07/06/client-side-webapp-ui-test</guid>
+    </item>
     <item>
       <title>Post-Another Hiatus - Node and Keyboards</title>
       <link>http://amanokami.net/blog/2016/06/20/post-another-hiatus</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[Learning AP Calculus BC in a week - End]]></description>
       <pubDate>2016-05-16</pubDate>
       <guid>http://amanokami.net/blog/2016/04/01/ap-calc-bc-in-a-week-end</guid>
-    </item>
-    <item>
-      <title>AP Calc BC in a week - Intro</title>
-      <link>http://amanokami.net/blog/2016/03/20/ap-calc-bc-in-a-week-intro</link>
-      <description><![CDATA[Learning AP Calculus BC in a week - Intro]]></description>
-      <pubDate>2016-05-16</pubDate>
-      <guid>http://amanokami.net/blog/2016/03/20/ap-calc-bc-in-a-week-intro</guid>
     </item>
   </channel>
 </rss>
